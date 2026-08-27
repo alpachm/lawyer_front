@@ -56,7 +56,7 @@ export const Header = () => {
     const closeMenu = (): void => setIsMenuOpen(false);
 
     return (
-        <header className="sticky top-0 z-50 bg-transparent backdrop-blur-sm">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md">
             <nav
                 className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16"
                 role="navigation"
