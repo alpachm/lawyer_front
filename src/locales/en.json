@@ -1,0 +1,35 @@
+{
+  "PrincipalLayout": {
+    "brandTitle": "Abog",
+    "mobileMenuAriaLabel": "Open navigation menu",
+    "footerRights": "All rights reserved.",
+    "footerMadeWith": "Made with ❤️ for the future."
+  },
+  "Hero": {
+    "title": "Welcome to Our Platform",
+    "subtitle": "Smart solutions for your business"
+  },
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Header": {
+    "brandName": "Jose A Rojas",
+    "brandTitle": "Attorney",
+    "navHome": "Home",
+    "navAbout": "About Me",
+    "navServices": "Services",
+    "navTestimonials": "Testimonials",
+    "mobileMenuAriaLabel": "Toggle navigation menu",
+    "closeMenuAriaLabel": "Close navigation menu"
+  },
+  "Actions": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "contact": "Contact"
+  }
+}
+
