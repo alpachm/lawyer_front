@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu, FiX } from "react-icons/fi";
 
@@ -39,6 +39,18 @@ const NAV_ENTRIES: NavEntry[] = [
 export const Header = () => {
     const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+    // Lock body scroll when mobile menu is open
+    useEffect(() => {
+        if (isMenuOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [isMenuOpen]);
 
     const toggleMenu = (): void => setIsMenuOpen((prev) => !prev);
     const closeMenu = (): void => setIsMenuOpen(false);
@@ -100,36 +112,39 @@ export const Header = () => {
                 </button>
             </nav>
 
-            {/* ---- Mobile: Dropdown menu ---- */}
-            {isMenuOpen && (
-                <div className="border-t border-text/10 bg-primary/95 backdrop-blur-sm md:hidden">
-                    <ul className="flex flex-col gap-1 px-4 py-4">
-                        {NAV_ENTRIES.map((entry) =>
-                            "isCTA" in entry ? (
-                                <li key={entry.labelKey}>
-                                    <a
-                                        href={entry.href}
-                                        className="block bg-accent px-5 py-2.5 text-center text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90"
-                                        onClick={closeMenu}
-                                    >
-                                        {t(entry.labelKey)}
-                                    </a>
-                                </li>
-                            ) : (
-                                <li key={entry.labelKey}>
-                                    <a
-                                        href={entry.href}
-                                        className="block rounded-md px-3 py-2.5 text-sm font-medium text-text transition-colors duration-200 hover:bg-text/5 hover:text-secondary"
-                                        onClick={closeMenu}
-                                    >
-                                        {t(entry.labelKey)}
-                                    </a>
-                                </li>
-                            ),
-                        )}
-                    </ul>
-                </div>
-            )}
+            {/* ---- Mobile: Slide-in panel ---- */}
+            <div
+                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-primary flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
+                    isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                }`}
+                aria-hidden={!isMenuOpen}
+            >
+                <ul className="flex flex-col justify-between text-center h-full gap-6">
+                    {NAV_ENTRIES.map((entry) =>
+                        "isCTA" in entry ? (
+                            <li key={entry.labelKey}>
+                                <a
+                                    href={entry.href}
+                                    className="block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
+                                    onClick={closeMenu}
+                                >
+                                    {t(entry.labelKey)}
+                                </a>
+                            </li>
+                        ) : (
+                            <li key={entry.labelKey}>
+                                <a
+                                    href={entry.href}
+                                    className="block py-3 text-3xl font-light text-text transition-colors duration-200 hover:text-secondary"
+                                    onClick={closeMenu}
+                                >
+                                    {t(entry.labelKey)}
+                                </a>
+                            </li>
+                        ),
+                    )}
+                </ul>
+            </div>
         </header>
     );
 };
