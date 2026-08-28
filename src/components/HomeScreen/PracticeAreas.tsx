@@ -79,7 +79,7 @@ export const PracticeAreas = () => {
     return (
         <section className="mx-auto max-w-7xl px-4 py-16 lg:py-24">
             {/* ---- Header Section ---- */}
-            <div className="max-w-2xl">
+            <div className="w-full flex flex-col items-center text-center">
                 <span className="font-sans text-xs font-bold uppercase tracking-[0.1em] text-accent">
                     {t("PracticeAreas.subheading")}
                 </span>
@@ -102,7 +102,10 @@ export const PracticeAreas = () => {
                             className="flex flex-col justify-between gap-4 rounded-xl border border-secondary-text/15 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
                             <div className="flex flex-col gap-4">
-                                <Icon className="h-10 w-10 shrink-0 text-secondary" aria-hidden="true" />
+                                <Icon
+                                    className="h-10 w-10 shrink-0 text-secondary"
+                                    aria-hidden="true"
+                                />
                                 <h3 className="font-serif text-xl font-bold text-primary">
                                     {t(area.titleKey)}
                                 </h3>
