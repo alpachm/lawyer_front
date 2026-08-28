@@ -6,8 +6,14 @@
     "footerMadeWith": "Hecho con ❤️ para el futuro."
   },
   "Hero": {
-    "title": "Bienvenido a Nuestra Plataforma",
-    "subtitle": "Soluciones inteligentes para tu negocio"
+    "subheading": "ASESORÍA JURÍDICA CORPORATIVA & PERSONAL",
+    "title": "Soluciones legales estratégicas para tu negocio",
+    "description": "Acompañamiento legal de confianza para empresas, emprendedores y particulares. Protejo tus intereses y aseguro el crecimiento de tu proyecto con soluciones a medida.",
+    "consultationCta": "Agendar Consulta",
+    "servicesCta": "Ver Servicios",
+    "badgeLicensed": "Abogado colegiado",
+    "badgeCases": "+200 casos atendidos",
+    "imageAlt": "Abogado corporativo ofreciendo asesoría legal estratégica"
   },
   "Nav": {
     "home": "Inicio",
@@ -32,4 +38,5 @@
     "contact": "Contacto"
   }
 }
+
 

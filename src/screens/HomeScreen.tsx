@@ -1,5 +1,11 @@
+import { Hero } from "../components/HomeScreen/Hero";
+
 function HomeScreen() {
-    return <h1 className="font-bold text-primary">Home Screen</h1>;
+    return (
+        <div className="bg-white">
+            <Hero />
+        </div>
+    );
 }
 
 export default HomeScreen;

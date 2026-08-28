@@ -6,8 +6,14 @@
     "footerMadeWith": "Made with ❤️ for the future."
   },
   "Hero": {
-    "title": "Welcome to Our Platform",
-    "subtitle": "Smart solutions for your business"
+    "subheading": "CORPORATE & PERSONAL LEGAL ADVICE",
+    "title": "Strategic legal solutions for your business",
+    "description": "Trusted legal support for companies, entrepreneurs, and individuals. I protect your interests and ensure your project's growth with tailored solutions.",
+    "consultationCta": "Schedule Consultation",
+    "servicesCta": "View Services",
+    "badgeLicensed": "Licensed Attorney",
+    "badgeCases": "+200 cases handled",
+    "imageAlt": "Corporate attorney offering strategic legal counsel"
   },
   "Nav": {
     "home": "Home",
@@ -32,4 +38,5 @@
     "contact": "Contact"
   }
 }
+
 

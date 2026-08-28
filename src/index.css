@@ -8,16 +8,17 @@
     --color-primary: #0f172a;
     --color-secondary: #2563eb;
     --color-accent: #c53030;
-    --color-text: #f1f5f9;
-    --color-secondary-text: #475569;
+    --color-text: #0f172a;
+    --color-secondary-text: #334155;
     --black: #000;
+    --white: #f8fafc;
 }
 
 @layer base {
     body {
         font-family: var(--font-sans);
         color: var(--color-text);
-        background-color: var(--color-primary);
+        background-color: var(--color-white);
     }
 
     h1,
