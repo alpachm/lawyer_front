@@ -58,6 +58,14 @@
     "stepThreeText": "Ejecutamos la estrategia con rigor buscando la resolución idónea."
   },
 
+  "Testimonials": {
+    "subheading": "Testimonios",
+    "title": "Lo que dicen mis clientes",
+    "description": "La tranquilidad de mis representados es la mejor garantía de mi trabajo diario",
+    "prevAriaLabel": "Testimonio anterior",
+    "nextAriaLabel": "Testimonio siguiente"
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",

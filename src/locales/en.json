@@ -58,6 +58,14 @@
     "stepThreeText": "We execute the strategy with rigor, seeking the ideal resolution."
   },
 
+  "Testimonials": {
+    "subheading": "Testimonials",
+    "title": "What my clients say",
+    "description": "My clients' peace of mind is the best guarantee of my daily work",
+    "prevAriaLabel": "Previous testimonial",
+    "nextAriaLabel": "Next testimonial"
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
