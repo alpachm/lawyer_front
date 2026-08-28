@@ -20,6 +20,24 @@
     "yearsExperience": "Years of Experience",
     "clientSatisfaction": "Client Satisfaction"
   },
+  "PracticeAreas": {
+    "subheading": "Specialties",
+    "title": "Practice Areas",
+    "description": "Comprehensive legal solutions designed to protect your assets and accelerate your commercial projects.",
+    "corporateTitle": "Corporate Law",
+    "corporateText": "Company formation, corporate governance, and legal structuring of business projects.",
+    "civilTitle": "Civil Law",
+    "civilText": "Contracts of all kinds, asset claims, and defense of individual rights.",
+    "laborTitle": "Labor Law",
+    "laborText": "Hiring strategies, defense in labor litigation, and labor regulatory compliance.",
+    "commercialTitle": "Commercial Law",
+    "commercialText": "Mergers, acquisitions, commercial restructuring, and corporate transactions.",
+    "intellectualTitle": "Intellectual Property",
+    "intellectualText": "Trademark registration, patents, software protection, copyright, and trade secrets.",
+    "litigationTitle": "Commercial Litigation",
+    "litigationText": "Representation and defense of commercial interests in judicial disputes and arbitration."
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
