@@ -15,6 +15,16 @@
     "badgeCases": "+200 casos atendidos",
     "imageAlt": "Abogado corporativo ofreciendo asesoría legal estratégica"
   },
+  "AboutUs": {
+    "subheading": "Abogado",
+    "title": "Acerca de mí",
+    "quote": "Representación y defensa de intereses comerciales en controversias judiciales y arbitrajes con el más alto rigor técnico.",
+    "body": "Con más de dos décadas de trayectoria en el sector jurídico, me he especializado en diseñar estrategias complejas para proteger el patrimonio y la reputación de corporaciones nacionales e internacionales. Mi enfoque combina la sofisticación académica con una pragmática visión de negocio, asegurando soluciones robustas tanto en litigios comerciales como en tribunales arbitrales de alta complejidad.",
+    "credentialOne": "Miembro activo del Colegio de Abogados de España",
+    "credentialTwo": "Especialista certificado en Derecho Comercial y Fusiones",
+    "credentialThree": "Árbitro certificado por el Centro de Arbitraje Comercial",
+    "imageAlt": "Abogado especializado en derecho comercial y arbitraje"
+  },
   "Figures": {
     "casesWon": "Casos ganados",
     "yearsExperience": "Años de experiencia",
@@ -55,6 +65,7 @@
     "closeMenuAriaLabel": "Cerrar menú de navegación"
   },
   "Actions": {
+    "scheduleConsultation": "Agendar consulta",
     "learnMore": "Saber Más",
     "getStarted": "Comenzar",
     "contactUs": "Contáctanos",

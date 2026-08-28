@@ -80,7 +80,7 @@ export const PracticeAreas = () => {
         <section className="mx-auto max-w-7xl px-4 py-16 lg:py-24">
             {/* ---- Header Section ---- */}
             <div className="w-full flex flex-col items-center text-center">
-                <span className="font-sans text-xs font-bold uppercase tracking-[0.1em] text-accent">
+                <span className="font-sans text-xs font-bold uppercase tracking-widest text-accent">
                     {t("PracticeAreas.subheading")}
                 </span>
                 <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-primary sm:text-4xl lg:text-5xl">

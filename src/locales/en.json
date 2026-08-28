@@ -15,6 +15,16 @@
     "badgeCases": "+200 cases handled",
     "imageAlt": "Corporate attorney offering strategic legal counsel"
   },
+  "AboutUs": {
+    "subheading": "Attorney",
+    "title": "About Me",
+    "quote": "Representation and defense of commercial interests in judicial disputes and arbitrations with the highest technical rigor.",
+    "body": "With more than two decades of experience in the legal sector, I have specialized in designing complex strategies to protect the assets and reputation of national and international corporations. My approach combines academic sophistication with a pragmatic business vision, ensuring robust solutions both in commercial litigation and in highly complex arbitration tribunals.",
+    "credentialOne": "Active member of the Spanish Bar Association",
+    "credentialTwo": "Certified specialist in Commercial Law and Mergers",
+    "credentialThree": "Certified arbitrator by the Commercial Arbitration Center",
+    "imageAlt": "Attorney specialized in commercial law and arbitration"
+  },
   "Figures": {
     "casesWon": "Cases Won",
     "yearsExperience": "Years of Experience",
@@ -55,6 +65,7 @@
     "closeMenuAriaLabel": "Close navigation menu"
   },
   "Actions": {
+    "scheduleConsultation": "Schedule consultation",
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",

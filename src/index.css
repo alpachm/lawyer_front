@@ -12,6 +12,7 @@
     --color-secondary-text: #334155;
     --black: #000;
     --white: #f8fafc;
+    --light_white: #cbd5e1;
 }
 
 @layer base {

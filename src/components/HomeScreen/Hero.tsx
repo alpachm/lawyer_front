@@ -68,7 +68,7 @@ export const Hero = () => {
                     <img
                         src={heroImage}
                         alt={t("Hero.imageAlt")}
-                        className="h-auto w-full object-cover shadow-2xl"
+                        className="h-auto w-full object-cover shadow-2xl rounded-xl"
                         loading="eager"
                     />
                 </div>
