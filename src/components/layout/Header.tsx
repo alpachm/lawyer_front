@@ -56,17 +56,17 @@ export const Header = () => {
     const closeMenu = (): void => setIsMenuOpen(false);
 
     return (
-        <header className="sticky top-0 z-50 bg-transparent backdrop-blur-sm">
+        <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md">
             <nav
                 className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16"
                 role="navigation"
             >
                 {/* ---- Left: Brand ---- */}
                 <a href="#home" className="flex flex-col leading-tight">
-                    <span className="font-serif text-xl font-bold tracking-wide text-text md:text-2xl">
+                    <span className="font-serif text-xl font-black tracking-wide text-primary md:text-3xl">
                         {t("Header.brandName")}
                     </span>
-                    <span className="font-sans text-xs uppercase tracking-[0.1em] text-secondary-text md:text-sm">
+                    <span className="font-sans text-xs uppercase tracking-[1px] text-accent">
                         {t("Header.brandTitle")}
                     </span>
                 </a>
@@ -114,7 +114,7 @@ export const Header = () => {
 
             {/* ---- Mobile: Slide-in panel ---- */}
             <div
-                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-primary flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
+                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-white flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 aria-hidden={!isMenuOpen}

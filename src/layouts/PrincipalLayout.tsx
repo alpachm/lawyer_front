@@ -5,7 +5,7 @@ export const PrincipalLayout = () => {
     return (
         <div className="min-h-screen bg-background flex flex-col">
             <Header />
-            <main className="flex-1">
+            <main className="flex-1 pt-20">
                 <Outlet />
             </main>
         </div>
