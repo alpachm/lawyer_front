@@ -20,6 +20,24 @@
     "yearsExperience": "Años de experiencia",
     "clientSatisfaction": "Satisfacción del cliente"
   },
+  "PracticeAreas": {
+    "subheading": "Especialidades",
+    "title": "Áreas de Práctica",
+    "description": "Soluciones jurídicas integrales diseñadas para blindar tu patrimonio y acelerar tus proyectos comerciales.",
+    "corporateTitle": "Derecho Corporativo",
+    "corporateText": "Constitución de sociedades, gobierno corporativo y estructuración legal de proyectos empresariales.",
+    "civilTitle": "Derecho Civil",
+    "civilText": "Contratos de toda índole, reclamaciones patrimoniales y defensa de derechos individuales.",
+    "laborTitle": "Derecho Laboral",
+    "laborText": "Estrategias de contratación, defensa ante litigios laborales y cumplimiento normativo laboral.",
+    "commercialTitle": "Derecho Mercantil",
+    "commercialText": "Fusiones, adquisiciones, reestructuraciones comerciales y transacciones corporativas.",
+    "intellectualTitle": "Propiedad Intelectual",
+    "intellectualText": "Registro de marcas, patentes, protección de software, derechos de autor y secretos industriales.",
+    "litigationTitle": "Litigios Comerciales",
+    "litigationText": "Representación y defensa de intereses comerciales en controversias judiciales y arbitrajes."
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",
