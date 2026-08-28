@@ -80,6 +80,18 @@
     "answerFour": "Sí, ofrecemos sesiones de asesoría 100% virtuales a través de videollamada para clientes nacionales e internacionales con la misma efectividad y rigor técnico que una consulta presencial."
   },
 
+  "Contact": {
+    "subheading": "Contacto",
+    "title": "Hablemos de su caso",
+    "description": "Inicia la defensa de sus derechos hoy mismo. Contácteme para comenzar a ayudarlo",
+    "whatsapp": "+58 412-0000000",
+    "phone": "+58 268-0000000",
+    "email": "contacto@abogado.com",
+    "address": "Santa Ana de Coro, Falcón, Venezuela",
+    "hours": "Lunes a Viernes: 8:00 AM - 5:00 PM",
+    "mapTitle": "Ubicación en Google Maps"
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",

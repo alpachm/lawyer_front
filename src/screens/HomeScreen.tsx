@@ -1,4 +1,5 @@
 import { AboutUs } from "../components/HomeScreen/AboutUs";
+import { Contact } from "../components/HomeScreen/Contact";
 import { FAQ } from "../components/HomeScreen/FAQ";
 import { Figures } from "../components/HomeScreen/Figures";
 import { Hero } from "../components/HomeScreen/Hero";
@@ -16,6 +17,7 @@ function HomeScreen() {
             <Testimonials />
             <AboutUs />
             <FAQ />
+            <Contact />
         </div>
     );
 }

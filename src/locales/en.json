@@ -80,6 +80,18 @@
     "answerFour": "Yes, we offer 100% virtual consultation sessions via video call for national and international clients with the same effectiveness and technical rigor as an in-person consultation."
   },
 
+  "Contact": {
+    "subheading": "Contact",
+    "title": "Let's talk about your case",
+    "description": "Start defending your rights today. Contact me to begin helping you.",
+    "whatsapp": "+58 412-0000000",
+    "phone": "+58 268-0000000",
+    "email": "contacto@abogado.com",
+    "address": "Santa Ana de Coro, Falcón, Venezuela",
+    "hours": "Monday to Friday: 8:00 AM - 5:00 PM",
+    "mapTitle": "Google Maps location"
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
