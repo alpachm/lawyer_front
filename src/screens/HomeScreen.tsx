@@ -3,6 +3,7 @@ import { Figures } from "../components/HomeScreen/Figures";
 import { Hero } from "../components/HomeScreen/Hero";
 import { Methodology } from "../components/HomeScreen/Methodology";
 import { PracticeAreas } from "../components/HomeScreen/PracticeAreas";
+import { Testimonials } from "../components/HomeScreen/Testimonials";
 
 function HomeScreen() {
     return (
@@ -11,6 +12,7 @@ function HomeScreen() {
             <Figures />
             <PracticeAreas />
             <Methodology />
+            <Testimonials />
             <AboutUs />
         </div>
     );
