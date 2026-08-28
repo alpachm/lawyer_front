@@ -15,6 +15,11 @@
     "badgeCases": "+200 casos atendidos",
     "imageAlt": "Abogado corporativo ofreciendo asesoría legal estratégica"
   },
+  "Figures": {
+    "casesWon": "Casos ganados",
+    "yearsExperience": "Años de experiencia",
+    "clientSatisfaction": "Satisfacción del cliente"
+  },
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",

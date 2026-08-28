@@ -15,6 +15,11 @@
     "badgeCases": "+200 cases handled",
     "imageAlt": "Corporate attorney offering strategic legal counsel"
   },
+  "Figures": {
+    "casesWon": "Cases Won",
+    "yearsExperience": "Years of Experience",
+    "clientSatisfaction": "Client Satisfaction"
+  },
   "Nav": {
     "home": "Home",
     "about": "About",
