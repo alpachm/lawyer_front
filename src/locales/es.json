@@ -66,6 +66,20 @@
     "nextAriaLabel": "Testimonio siguiente"
   },
 
+  "FAQ": {
+    "subheading": "Preguntas frecuentes",
+    "title": "Resuelvo tus dudas antes de empezar",
+    "description": "¿No he solucionado sus dudas? Escríbame para asesorarlo/a personalmente.",
+    "questionOne": "¿Cómo agendo una primera consulta?",
+    "answerOne": "Puede agendar su consulta directamente a través del botón 'Agendar Consulta' en nuestro sitio web, seleccionando la fecha y hora que mejor se adapte a su disponibilidad, o enviándome un mensaje directo vía WhatsApp.",
+    "questionTwo": "¿Dónde está ubicado?",
+    "answerTwo": "Nuestra oficina principal se encuentra ubicada en una zona central corporativa. Atendemos de forma presencial previa cita y también ofrecemos atención en ubicaciones ejecutivas a convenir.",
+    "questionThree": "¿Qué áreas del derecho maneja?",
+    "answerThree": "Nos especializamos en Derecho Corporativo, Mercantil, Civil, Laboral, Propiedad Intelectual y Litigios Comerciales y Arbitrajes.",
+    "questionFour": "¿Ofrece asesoría virtual?",
+    "answerFour": "Sí, ofrecemos sesiones de asesoría 100% virtuales a través de videollamada para clientes nacionales e internacionales con la misma efectividad y rigor técnico que una consulta presencial."
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",
