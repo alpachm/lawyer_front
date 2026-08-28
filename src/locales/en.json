@@ -66,6 +66,20 @@
     "nextAriaLabel": "Next testimonial"
   },
 
+  "FAQ": {
+    "subheading": "Frequently Asked Questions",
+    "title": "I answer your questions before we get started",
+    "description": "Didn't find the answer you were looking for? Write to me for personalized advice.",
+    "questionOne": "How do I schedule a first consultation?",
+    "answerOne": "You can schedule your consultation directly through the 'Schedule Consultation' button on our website, selecting the date and time that best suits your availability, or by sending me a direct message via WhatsApp.",
+    "questionTwo": "Where are you located?",
+    "answerTwo": "Our main office is located in a central corporate area. We serve clients in person by appointment and also offer services at executive locations upon request.",
+    "questionThree": "What areas of law do you practice?",
+    "answerThree": "We specialize in Corporate, Commercial, Civil, Labor, Intellectual Property, and Commercial Litigation and Arbitration law.",
+    "questionFour": "Do you offer virtual consultations?",
+    "answerFour": "Yes, we offer 100% virtual consultation sessions via video call for national and international clients with the same effectiveness and technical rigor as an in-person consultation."
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
