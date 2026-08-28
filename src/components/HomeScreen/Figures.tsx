@@ -33,7 +33,7 @@ export const Figures = () => {
                 <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
                     {METRICS.map((metric) => (
                         <div key={metric.labelKey}>
-                            <div className="font-serif text-4xl font-bold lg:text-5xl">
+                            <div className="font-sans text-4xl font-bold lg:text-5xl">
                                 <span className="text-white">{metric.value}</span>
                                 <span className="text-accent">{metric.symbol}</span>
                             </div>

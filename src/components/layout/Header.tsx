@@ -78,7 +78,7 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    className=" bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
+                                    className="rounded-md bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
                                 </a>
@@ -125,7 +125,7 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    className="block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
+                                    className="rounded-md block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
                                     onClick={closeMenu}
                                 >
                                     {t(entry.labelKey)}
