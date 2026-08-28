@@ -99,13 +99,15 @@ export const PracticeAreas = () => {
                     return (
                         <article
                             key={area.titleKey}
-                            className="flex flex-col justify-between gap-4 rounded-xl border border-secondary-text/15 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                            className="group flex flex-col justify-between gap-4 rounded-xl border border-secondary-text/15 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
                         >
                             <div className="flex flex-col gap-4">
-                                <Icon
-                                    className="h-10 w-10 shrink-0 text-secondary"
-                                    aria-hidden="true"
-                                />
+                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 transition-transform duration-300 group-hover:scale-110">
+                                    <Icon
+                                        className="h-6 w-6 shrink-0 text-secondary"
+                                        aria-hidden="true"
+                                    />
+                                </div>
                                 <h3 className="font-serif text-xl font-bold text-primary">
                                     {t(area.titleKey)}
                                 </h3>
