@@ -47,6 +47,16 @@
     "litigationTitle": "Commercial Litigation",
     "litigationText": "Representation and defense of commercial interests in judicial disputes and arbitration."
   },
+  "Methodology": {
+    "subheading": "Methodology",
+    "title": "A clear process from the start",
+    "stepOneTitle": "Case Evaluation",
+    "stepOneText": "We analyze in detail the legal situation and background of your inquiry.",
+    "stepTwoTitle": "Legal Strategy",
+    "stepTwoText": "We design a personalized and transparent strategic action plan.",
+    "stepThreeTitle": "Representation & Resolution",
+    "stepThreeText": "We execute the strategy with rigor, seeking the ideal resolution."
+  },
 
   "Nav": {
     "home": "Home",

@@ -47,6 +47,16 @@
     "litigationTitle": "Litigios Comerciales",
     "litigationText": "Representación y defensa de intereses comerciales en controversias judiciales y arbitrajes."
   },
+  "Methodology": {
+    "subheading": "Metodología",
+    "title": "Un proceso claro desde el inicio",
+    "stepOneTitle": "Evaluación del Caso",
+    "stepOneText": "Analizamos en detalle la situación legal y antecedentes de tu consulta.",
+    "stepTwoTitle": "Estrategia Legal",
+    "stepTwoText": "Diseñamos un plan de acción estratégico personalizado y transparente.",
+    "stepThreeTitle": "Representación y Solución",
+    "stepThreeText": "Ejecutamos la estrategia con rigor buscando la resolución idónea."
+  },
 
   "Nav": {
     "home": "Inicio",
