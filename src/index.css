@@ -1,9 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Unbounded:wght@200..900&display=swap');");
 @import "tailwindcss";
 
 @theme {
     --font-serif: "Playfair Display", serif;
     --font-sans: "Lato", sans-serif;
+    --font-vizo: "Unbounded", sans-serif;
 
     --color-primary: #0f172a;
     --color-secondary: #2563eb;
@@ -11,6 +12,7 @@
     --color-text: #0f172a;
     --color-secondary-text: #334155;
     --color-gold: #fbbf24;
+    --color-vizo: #d97706;
 
     --black: #000;
     --white: #f8fafc;
