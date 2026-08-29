@@ -139,7 +139,10 @@
     "phone": "+58 268-0000000",
     "rights": "© {{year}} Jose A Rojas. Todos los derechos reservados.",
     "terms": "Términos y Condiciones",
-    "privacy": "Política de Privacidad"
+    "privacy": "Política de Privacidad",
+    "creditPrefix": "Sitio web creado por",
+    "creditBrandVizo": "Vizo",
+    "creditBrandStudio": "Studio"
   },
   "Actions": {
     "scheduleConsultation": "Agendar consulta",

@@ -1,5 +1,4 @@
 import type { IconType } from "react-icons";
-import { FaBalanceScale } from "react-icons/fa";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
@@ -177,20 +176,38 @@ export const Footer = () => {
                 </div>
 
                 {/* ---- Bottom Copyright Bar ---- */}
-                <div className="flex flex-col items-center justify-between gap-4 pt-8 text-xs text-slate-500 md:flex-row">
+                <div className="flex flex-col items-center justify-center gap-4 pt-8 text-xs text-slate-500 md:flex-row">
                     <p>{t("Footer.rights", { year: currentYear })}</p>
                     <div className="flex items-center gap-2">
-                        <a href="#" className="transition-colors duration-200 hover:text-gold">
+                        <a href="#" className="transition-colors duration-200 hover:text-secondary">
                             {t("Footer.terms")}
                         </a>
                         <span className="text-slate-600" aria-hidden="true">
                             ·
                         </span>
-                        <a href="#" className="transition-colors duration-200 hover:text-gold">
+                        <a href="#" className="transition-colors duration-200 hover:text-secondary">
                             {t("Footer.privacy")}
                         </a>
                     </div>
                 </div>
+
+                {/* ---- Creation Credit ---- */}
+                <p className="flex items-center justify-center gap-1 pt-4 text-center font-sans text-xs tracking-wide text-slate-500">
+                    <span>{t("Footer.creditPrefix")}</span>
+                    <a
+                        href="https://vizostudio.dev"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-baseline gap-1 transition-opacity duration-200 hover:opacity-80"
+                    >
+                        <span className="font-vizo text-md font-extrabold text-white">
+                            {t("Footer.creditBrandVizo")}
+                        </span>
+                        <span className="font-vizo text-md font-extrabold text-vizo">
+                            {t("Footer.creditBrandStudio")}
+                        </span>
+                    </a>
+                </p>
             </div>
         </footer>
     );
