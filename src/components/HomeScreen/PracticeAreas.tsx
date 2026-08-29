@@ -99,10 +99,14 @@ export const PracticeAreas = () => {
                     return (
                         <article
                             key={area.titleKey}
-                            className="group flex flex-col justify-between gap-4 rounded-xl border border-secondary-text/15 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                            className="group relative flex flex-col justify-between gap-4 overflow-hidden rounded-xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
                         >
+                            <span
+                                aria-hidden="true"
+                                className="absolute left-0 top-0 bottom-0 w-1.5 origin-top scale-y-0 bg-secondary opacity-0 transition-all duration-300 ease-out group-hover:scale-y-100 group-hover:opacity-100"
+                            />
                             <div className="flex flex-col gap-4">
-                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10 transition-transform duration-300 group-hover:scale-110">
+                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
                                     <Icon
                                         className="h-6 w-6 shrink-0 text-secondary"
                                         aria-hidden="true"
@@ -118,13 +122,10 @@ export const PracticeAreas = () => {
 
                             <a
                                 href="#contact"
-                                className="group inline-flex items-center gap-2 self-start font-sans text-sm font-semibold text-accent transition-colors duration-200 hover:text-primary"
+                                className="inline-flex items-center gap-2 self-start font-sans text-sm font-semibold text-accent transition-colors duration-200 hover:text-primary"
                             >
                                 {t("Actions.learnMore")}
-                                <FaArrowRight
-                                    className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
-                                    aria-hidden="true"
-                                />
+                                <FaArrowRight className="h-4 w-4" aria-hidden="true" />
                             </a>
                         </article>
                     );
