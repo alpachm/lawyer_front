@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import type { IconType } from "react-icons";
 import {
     FaArrowRight,
@@ -70,6 +71,80 @@ const PRACTICE_AREAS: PracticeArea[] = [
 ];
 
 // ---------------------------------------------------------------------------
+// Card Sub-Component
+// ---------------------------------------------------------------------------
+
+interface PracticeAreaCardProps {
+    area: PracticeArea;
+}
+
+const PracticeAreaCard = ({ area }: PracticeAreaCardProps) => {
+    const { t } = useTranslation();
+    const cardRef = useRef<HTMLElement | null>(null);
+    const [isInView, setIsInView] = useState(false);
+    const Icon = area.icon;
+
+    useEffect(() => {
+        const card = cardRef.current;
+
+        // Keep the static hover-only border when IntersectionObserver (or JS)
+        // is unavailable so the appearance is never degraded.
+        if (!card || typeof IntersectionObserver === "undefined") {
+            return;
+        }
+
+        // Run the scroll-triggered border animation on all screen sizes. The
+        // `group-hover:*` utilities below independently handle desktop hover.
+        const observer = new IntersectionObserver(
+            (entries) => {
+                for (const entry of entries) {
+                    setIsInView(entry.isIntersecting);
+                }
+            },
+            {
+                rootMargin: "-10% 0px -10% 0px",
+                threshold: 0.99,
+            },
+        );
+
+        observer.observe(card);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
+    return (
+        <article
+            ref={cardRef}
+            className="group relative flex flex-col justify-between gap-4 overflow-hidden rounded-xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+        >
+            <span
+                aria-hidden="true"
+                className={`absolute left-0 top-0 bottom-0 w-1.5 origin-top bg-secondary transition-all duration-300 ease-out group-hover:scale-y-100 group-hover:opacity-100 ${
+                    isInView ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+                }`}
+            />
+            <div className="flex flex-col gap-4">
+                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
+                    <Icon className="h-6 w-6 shrink-0 text-secondary" aria-hidden="true" />
+                </div>
+                <h3 className="font-serif text-xl font-bold text-primary">{t(area.titleKey)}</h3>
+                <p className="text-base leading-relaxed text-secondary-text">{t(area.textKey)}</p>
+            </div>
+
+            <a
+                href="#contact"
+                className="inline-flex items-center gap-2 self-start font-sans text-sm font-semibold text-accent transition-colors duration-200 hover:text-primary"
+            >
+                {t("Actions.learnMore")}
+                <FaArrowRight className="h-4 w-4" aria-hidden="true" />
+            </a>
+        </article>
+    );
+};
+
+// ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 
@@ -93,43 +168,9 @@ export const PracticeAreas = () => {
 
             {/* ---- Practice Area Cards Grid ---- */}
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-                {PRACTICE_AREAS.map((area) => {
-                    const Icon = area.icon;
-
-                    return (
-                        <article
-                            key={area.titleKey}
-                            className="group relative flex flex-col justify-between gap-4 overflow-hidden rounded-xl border border-slate-200/80 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                        >
-                            <span
-                                aria-hidden="true"
-                                className="absolute left-0 top-0 bottom-0 w-1.5 origin-top scale-y-0 bg-secondary opacity-0 transition-all duration-300 ease-out group-hover:scale-y-100 group-hover:opacity-100"
-                            />
-                            <div className="flex flex-col gap-4">
-                                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-secondary/10">
-                                    <Icon
-                                        className="h-6 w-6 shrink-0 text-secondary"
-                                        aria-hidden="true"
-                                    />
-                                </div>
-                                <h3 className="font-serif text-xl font-bold text-primary">
-                                    {t(area.titleKey)}
-                                </h3>
-                                <p className="text-base leading-relaxed text-secondary-text">
-                                    {t(area.textKey)}
-                                </p>
-                            </div>
-
-                            <a
-                                href="#contact"
-                                className="inline-flex items-center gap-2 self-start font-sans text-sm font-semibold text-accent transition-colors duration-200 hover:text-primary"
-                            >
-                                {t("Actions.learnMore")}
-                                <FaArrowRight className="h-4 w-4" aria-hidden="true" />
-                            </a>
-                        </article>
-                    );
-                })}
+                {PRACTICE_AREAS.map((area) => (
+                    <PracticeAreaCard key={area.titleKey} area={area} />
+                ))}
             </div>
         </section>
     );
