@@ -92,6 +92,11 @@
     "mapTitle": "Google Maps location"
   },
 
+  "WhatsappCTA": {
+    "title": "Do you want an immediate response?",
+    "subtitle": "Write to me on WhatsApp and I'll assist you right away"
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
@@ -113,7 +118,8 @@
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "whatsappCta": "Write on WhatsApp"
   }
 }
 
