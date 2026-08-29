@@ -82,6 +82,7 @@ const PracticeAreaCard = ({ area }: PracticeAreaCardProps) => {
     const { t } = useTranslation();
     const cardRef = useRef<HTMLElement | null>(null);
     const [isInView, setIsInView] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
     const Icon = area.icon;
 
     useEffect(() => {
@@ -93,8 +94,19 @@ const PracticeAreaCard = ({ area }: PracticeAreaCardProps) => {
             return;
         }
 
-        // Run the scroll-triggered border animation on all screen sizes. The
-        // `group-hover:*` utilities below independently handle desktop hover.
+        // Scroll-triggered border animation is a mobile/touch-only enhancement.
+        // On desktop (`hover: hover` / wide viewport) we leave `isInView` at
+        // `false` so the Tailwind `group-hover:*` utilities keep full control.
+        const isTouchDevice = window.matchMedia("(hover: none)").matches;
+        const isNarrowViewport = window.innerWidth < 1024;
+        const shouldAnimateOnScroll = isTouchDevice || isNarrowViewport;
+
+        setIsMobile(shouldAnimateOnScroll);
+
+        if (!shouldAnimateOnScroll) {
+            return;
+        }
+
         const observer = new IntersectionObserver(
             (entries) => {
                 for (const entry of entries) {
@@ -122,7 +134,7 @@ const PracticeAreaCard = ({ area }: PracticeAreaCardProps) => {
             <span
                 aria-hidden="true"
                 className={`absolute left-0 top-0 bottom-0 w-1.5 origin-top bg-secondary transition-all duration-300 ease-out group-hover:scale-y-100 group-hover:opacity-100 ${
-                    isInView ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+                    isMobile && isInView ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
                 }`}
             />
             <div className="flex flex-col gap-4">
