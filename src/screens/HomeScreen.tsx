@@ -6,6 +6,7 @@ import { Hero } from "../components/HomeScreen/Hero";
 import { Methodology } from "../components/HomeScreen/Methodology";
 import { PracticeAreas } from "../components/HomeScreen/PracticeAreas";
 import { Testimonials } from "../components/HomeScreen/Testimonials";
+import { WhatsappCTA } from "../components/HomeScreen/WhatsappCTA";
 
 function HomeScreen() {
     return (
@@ -18,6 +19,7 @@ function HomeScreen() {
             <AboutUs />
             <FAQ />
             <Contact />
+            <WhatsappCTA />
         </div>
     );
 }

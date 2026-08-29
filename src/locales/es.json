@@ -92,6 +92,11 @@
     "mapTitle": "Ubicación en Google Maps"
   },
 
+  "WhatsappCTA": {
+    "title": "¿Desea una respuesta inmediata?",
+    "subtitle": "Escríbame por WhatsApp y le atenderé al instante"
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",
@@ -113,7 +118,8 @@
     "learnMore": "Saber Más",
     "getStarted": "Comenzar",
     "contactUs": "Contáctanos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "whatsappCta": "Escribir por WhatsApp"
   }
 }
 
