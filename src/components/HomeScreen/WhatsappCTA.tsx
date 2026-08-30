@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 // Constants
 // ---------------------------------------------------------------------------
 
-const WHATSAPP_URL = "https://wa.me/584120000000";
+const WHATSAPP_URL = "https://wa.link/3ant7x";
 
 // ---------------------------------------------------------------------------
 // Component

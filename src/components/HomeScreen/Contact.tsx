@@ -1,5 +1,6 @@
 import type { IconType } from "react-icons";
-import { FiClock, FiMail, FiMapPin, FiMessageSquare, FiPhone } from "react-icons/fi";
+import { FaWhatsapp } from "react-icons/fa";
+import { FiClock, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
 // ---------------------------------------------------------------------------
@@ -24,9 +25,9 @@ interface ContactItem {
 
 const CONTACT_ITEMS: ContactItem[] = [
     {
-        icon: FiMessageSquare,
+        icon: FaWhatsapp,
         labelKey: "Contact.whatsapp",
-        href: "https://wa.me/584120000000",
+        href: "https://wa.link/3ant7x",
         external: true,
     },
     {

@@ -26,12 +26,14 @@ type NavEntry = NavItem | CtaItem;
 // Constants
 // ---------------------------------------------------------------------------
 
+const WHATSAPP_URL = "https://wa.link/3ant7x";
+
 const NAV_ENTRIES: NavEntry[] = [
     { labelKey: "Header.navHome", href: "#home" },
     { labelKey: "Header.navAbout", href: "#about" },
     { labelKey: "Header.navServices", href: "#services" },
     { labelKey: "Header.navTestimonials", href: "#testimonials" },
-    { labelKey: "Actions.contact", href: "#contact", isCTA: true },
+    { labelKey: "Actions.contact", href: WHATSAPP_URL, isCTA: true },
 ];
 
 // ---------------------------------------------------------------------------
@@ -129,7 +131,8 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    onClick={(event) => handleNavClick(event, entry.href)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="rounded-md bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
@@ -178,7 +181,8 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    onClick={(event) => handleNavClick(event, entry.href)}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="rounded-md block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
