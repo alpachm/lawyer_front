@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu, FiX } from "react-icons/fi";
+
+import { scrollToSection } from "../../utils/scrollNavigation";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -70,8 +72,32 @@ export const Header = () => {
     const toggleMenu = (): void => setIsMenuOpen((prev) => !prev);
     const closeMenu = (): void => setIsMenuOpen(false);
 
+    const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string): void => {
+        // Keep native behaviour for new-tab / modified clicks.
+        if (
+            event.defaultPrevented ||
+            event.button !== 0 ||
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey
+        ) {
+            return;
+        }
+
+        event.preventDefault();
+        closeMenu();
+
+        // Clear the mobile menu body scroll lock immediately so the smooth
+        // scroll is never blocked by the still-open drawer state.
+        document.body.style.overflow = "";
+
+        scrollToSection(href);
+    };
+
     return (
         <header
+            id="site-header"
             className={`fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md transition-all duration-300 ease-in-out ${
                 isScrolled ? "shadow-md" : "shadow-none"
             }`}
@@ -83,7 +109,11 @@ export const Header = () => {
                 role="navigation"
             >
                 {/* ---- Left: Brand ---- */}
-                <a href="#home" className="flex flex-col leading-tight">
+                <a
+                    href="#home"
+                    className="flex flex-col leading-tight"
+                    onClick={(event) => handleNavClick(event, "#home")}
+                >
                     <span className="font-serif text-xl font-black tracking-wide text-primary md:text-3xl">
                         {t("Header.brandName")}
                     </span>
@@ -99,6 +129,7 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="rounded-md bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
@@ -108,6 +139,7 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="text-xl font-light text-text transition-colors duration-200 hover:text-secondary"
                                 >
                                     {t(entry.labelKey)}
@@ -146,8 +178,8 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="rounded-md block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
-                                    onClick={closeMenu}
                                 >
                                     {t(entry.labelKey)}
                                 </a>
@@ -156,8 +188,8 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="block py-3 text-3xl font-light text-text transition-colors duration-200 hover:text-secondary"
-                                    onClick={closeMenu}
                                 >
                                     {t(entry.labelKey)}
                                 </a>

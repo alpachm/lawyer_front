@@ -1,5 +1,8 @@
+import type { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { FiBriefcase, FiShield } from "react-icons/fi";
+
+import { scrollToSection } from "../../utils/scrollNavigation";
 
 import heroImage from "../../assets/HomeScreen/hero.png";
 
@@ -10,8 +13,25 @@ import heroImage from "../../assets/HomeScreen/hero.png";
 export const Hero = () => {
     const { t } = useTranslation();
 
+    const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string): void => {
+        // Keep native behaviour for new-tab / modified clicks.
+        if (
+            event.defaultPrevented ||
+            event.button !== 0 ||
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey
+        ) {
+            return;
+        }
+
+        event.preventDefault();
+        scrollToSection(href);
+    };
+
     return (
-        <section className="mx-auto max-w-7xl px-4 py-4 lg:py-18">
+        <section id="home" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-4 lg:py-18">
             <div className="flex flex-col-reverse items-center gap-10 lg:flex-row lg:gap-16">
                 {/* ---- Left Column: Content (60%) ---- */}
                 <div className="flex w-full flex-col gap-6 lg:w-[60%]">
@@ -34,12 +54,14 @@ export const Hero = () => {
                     <div className="flex flex-wrap items-center gap-4">
                         <a
                             href="#contact"
+                            onClick={(event) => handleNavClick(event, "#contact")}
                             className="inline-flex items-center rounded-md bg-accent px-6 py-3 font-sans text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90 sm:text-base"
                         >
                             {t("Hero.consultationCta")}
                         </a>
                         <a
                             href="#services"
+                            onClick={(event) => handleNavClick(event, "#services")}
                             className="inline-flex items-center rounded-md border border-secondary-text px-6 py-3 font-sans text-sm font-semibold text-text transition-colors duration-200 hover:border-secondary hover:text-secondary sm:text-base"
                         >
                             {t("Hero.servicesCta")}
