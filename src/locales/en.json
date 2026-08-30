@@ -148,13 +148,36 @@
     "creditBrandVizo": "Vizo",
     "creditBrandStudio": "Studio"
   },
+  "TermsAndConditions": {
+    "subheading": "Legal Notice",
+    "title": "Terms and Conditions",
+    "subtitle": "General conditions governing access to and use of this website, as well as the informational services offered by the firm.",
+    "lastUpdated": "Last updated: August 30, 2026",
+    "sectionOneTitle": "1. Acceptance of Terms",
+    "sectionOneBody": "By accessing, browsing, or using this website, you represent that you have read, understood, and fully and unconditionally accepted these Terms and Conditions. If you do not agree with any of the provisions contained herein, we ask that you refrain from using the site and the informational services offered therein. Access to the site is free of charge and does not require prior registration, without prejudice to the specific conditions that may apply to the professional services contracted independently.",
+    "sectionTwoTitle": "2. Professional Services and Absence of Attorney-Client Relationship",
+    "sectionTwoBodyOne": "The information published on this website is for informational purposes only and does not constitute legal advice, legal opinion, or any professional recommendation. Merely accessing the site, reading its content, or sending inquiries through the contact forms, email, or other available means of communication does not, by itself, create an attorney-client relationship.",
+    "sectionTwoBodyTwo": "An attorney-client relationship shall only be deemed formalized when a representation agreement or engagement letter is expressly executed between the firm and the client, following a case evaluation and mutual acceptance of the terms of engagement. Accordingly, you should not share confidential or sensitive information through the site's contact channels without having first formalized such a relationship.",
+    "sectionThreeTitle": "3. Intellectual Property",
+    "sectionThreeBody": "All content published on this website, including, but not limited to, texts, images, logos, trademarks, trade names, slogans, graphics, design elements, structure, databases, and other materials, is protected by applicable intellectual and industrial property laws and belongs to the site owner or to third parties that have authorized its use. The reproduction, distribution, transformation, public communication, or any other act of exploitation of such content is expressly prohibited without the owner's prior written authorization.",
+    "sectionFourTitle": "4. Acceptable Use of the Website",
+    "sectionFourBody": "The user undertakes to make lawful, diligent, and appropriate use of the website and its content, and agrees not to engage in conduct that may damage, disable, overload, or impair the site, nor to perform acts of mass data extraction (scraping), injection of malicious code, identity theft, or any fraudulent use of the firm's contact channels. Likewise, the use of the site for unlawful, deceptive, or otherwise improper purposes contrary to public order and good customs is prohibited.",
+    "sectionFiveTitle": "5. Limitation of Liability",
+    "sectionFiveBodyOne": "The content of this website is provided for informational purposes only and does not guarantee the accuracy, timeliness, completeness, or suitability of the published information for any particular case. The owner shall not be liable for any damages that may arise from the use of the information contained on the site or from the user's interpretation thereof.",
+    "sectionFiveBodyTwo": "This site may contain links to third-party websites, which are provided solely for reference. The owner assumes no responsibility for the content, policies, or practices of such external sites. Likewise, no guarantee is made regarding the technical availability, continuity, or absence of errors in the operation of the website, which may be temporarily suspended for maintenance reasons or for causes beyond the owner's control.",
+    "sectionSixTitle": "6. Applicable Law and Jurisdiction",
+    "sectionSixBody": "These Terms and Conditions are governed by and construed in accordance with the laws in force in the Bolivarian Republic of Venezuela. For the resolution of any dispute that may arise from access to or use of this website, the parties expressly submit to the jurisdiction of the competent courts of the Bolivarian Republic of Venezuela, waiving any other jurisdiction to which they may be entitled.",
+    "sectionSevenTitle": "7. Modifications to the Terms",
+    "sectionSevenBody": "The owner of the website reserves the right to modify, update, or remove, at any time and without prior notice, the content of these Terms and Conditions, as well as any other aspect of the site, whenever required by legal, operational, or business changes. The modifications shall become effective upon their publication on the website; therefore, the user is encouraged to periodically review this page to stay informed of the current conditions."
+  },
   "Actions": {
     "scheduleConsultation": "Schedule consultation",
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",
     "contact": "Contact",
-    "whatsappCta": "Write on WhatsApp"
+    "whatsappCta": "Write on WhatsApp",
+    "backHome": "Back to Home"
   }
 }
 

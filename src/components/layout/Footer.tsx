@@ -1,5 +1,6 @@
 import type { MouseEvent } from "react";
 import type { IconType } from "react-icons";
+import { Link } from "@tanstack/react-router";
 import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
@@ -205,9 +206,12 @@ export const Footer = () => {
                 <div className="flex flex-col items-center justify-center gap-4 pt-8 text-xs text-slate-500 md:flex-row">
                     <p>{t("Footer.rights", { year: currentYear })}</p>
                     <div className="flex items-center gap-2">
-                        <a href="#" className="transition-colors duration-200 hover:text-secondary">
+                        <Link
+                            to="/terminos-y-condiciones"
+                            className="transition-colors duration-200 hover:text-secondary"
+                        >
                             {t("Footer.terms")}
-                        </a>
+                        </Link>
                         <span className="text-slate-600" aria-hidden="true">
                             ·
                         </span>

@@ -148,13 +148,36 @@
     "creditBrandVizo": "Vizo",
     "creditBrandStudio": "Studio"
   },
+  "TermsAndConditions": {
+    "subheading": "Aviso Legal",
+    "title": "Términos y Condiciones",
+    "subtitle": "Condiciones generales que regulan el acceso y uso de este sitio web, así como los servicios de información ofrecidos por el despacho.",
+    "lastUpdated": "Última actualización: 30 de agosto de 2026",
+    "sectionOneTitle": "1. Aceptación de los Términos",
+    "sectionOneBody": "Al acceder, navegar o utilizar este sitio web, usted manifiesta haber leído, comprendido y aceptado de manera plena e incondicional los presentes Términos y Condiciones. Si no está de acuerdo con cualquiera de las disposiciones aquí contenidas, le solicitamos abstenerse de utilizar el sitio y los servicios de información que en él se ofrecen. El acceso al sitio es gratuito y no requiere registro previo, sin perjuicio de las condiciones particulares que puedan aplicar a los servicios profesionales contratados de forma independiente.",
+    "sectionTwoTitle": "2. Servicios Profesionales y Ausencia de Relación Abogado-Cliente",
+    "sectionTwoBodyOne": "La información publicada en este sitio web tiene carácter meramente informativo y no constituye asesoría legal, opinión jurídica ni recomendación profesional alguna. El mero acceso al sitio, la lectura de su contenido o el envío de consultas a través de los formularios de contacto, correo electrónico u otros medios de comunicación disponibles no generan, por sí solos, una relación de abogado-cliente.",
+    "sectionTwoBodyTwo": "La relación profesional de abogado-cliente únicamente se entenderá formalizada cuando se suscriba de manera expresa un contrato u hoja de encargo de representación entre el despacho y el cliente, previa evaluación del caso y aceptación mutua de los términos de la contratación. En consecuencia, no debe compartir información confidencial o sensible a través de los medios de contacto del sitio web sin haber formalizado previamente dicha relación.",
+    "sectionThreeTitle": "3. Propiedad Intelectual",
+    "sectionThreeBody": "Todos los contenidos publicados en este sitio web, incluyendo, de manera enunciativa más no limitativa, textos, imágenes, logotipos, marcas, nombres comerciales, eslóganes, gráficos, elementos de diseño, estructura, bases de datos y demás materiales, se encuentran protegidos por las normas de propiedad intelectual e industrial vigentes y pertenecen al titular del sitio o a los terceros que hayan autorizado su uso. Queda expresamente prohibida la reproducción, distribución, transformación, comunicación pública o cualquier otro acto de explotación de dichos contenidos sin la autorización previa y por escrito del titular.",
+    "sectionFourTitle": "4. Uso Aceptable del Sitio Web",
+    "sectionFourBody": "El usuario se obliga a hacer un uso lícito, diligente y adecuado del sitio web y de sus contenidos, y se compromete a no incurrir en conductas que puedan dañar, inutilizar, sobrecargar o deteriorar el sitio, ni a realizar actos de extracción masiva de datos (scraping), inyección de código malicioso, suplantación de identidad o cualquier uso fraudulento de los medios de contacto del despacho. Asimismo, queda prohibido el uso del sitio para fines ilícitos, engañosos o contrarios al orden público y a las buenas costumbres.",
+    "sectionFiveTitle": "5. Limitación de Responsabilidad",
+    "sectionFiveBodyOne": "El contenido de este sitio web se ofrece con fines exclusivamente informativos y no garantiza la exactitud, actualidad, integridad o idoneidad de la información publicada para un caso concreto. El titular no será responsable de los daños y perjuicios que pudieran derivarse del uso de la información contenida en el sitio, ni de la interpretación que el usuario haga de la misma.",
+    "sectionFiveBodyTwo": "Este sitio puede contener enlaces a sitios web de terceros, los cuales se proporcionan únicamente como referencia. El titular no asume responsabilidad alguna por el contenido, las políticas o las prácticas de dichos sitios externos. Asimismo, no se garantiza la disponibilidad técnica, continuidad o ausencia de errores en el funcionamiento del sitio web, el cual podrá ser suspendido temporalmente por razones de mantenimiento o por causas ajenas a su voluntad.",
+    "sectionSixTitle": "6. Legislación Aplicable y Jurisdicción",
+    "sectionSixBody": "Los presentes Términos y Condiciones se rigen e interpretan de conformidad con las leyes vigentes de la República Bolivariana de Venezuela. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, las partes se someten de manera expresa a la jurisdicción de los tribunales competentes de la República Bolivariana de Venezuela, con renuncia a cualquier otro fuero que pudiera corresponderles.",
+    "sectionSevenTitle": "7. Modificaciones a los Términos",
+    "sectionSevenBody": "El titular del sitio web se reserva el derecho de modificar, actualizar o suprimir, en cualquier momento y sin previo aviso, el contenido de los presentes Términos y Condiciones, así como cualquier otro aspecto del sitio, cuando así lo exijan cambios legales, operativos o de negocio. Las modificaciones entrarán en vigor desde el momento de su publicación en el sitio web, por lo que se recomienda al usuario revisar periódicamente esta página para mantenerse informado de las condiciones vigentes."
+  },
   "Actions": {
     "scheduleConsultation": "Agendar consulta",
     "learnMore": "Saber Más",
     "getStarted": "Comenzar",
     "contactUs": "Contáctanos",
     "contact": "Contacto",
-    "whatsappCta": "Escribir por WhatsApp"
+    "whatsappCta": "Escribir por WhatsApp",
+    "backHome": "Volver al Inicio"
   }
 }
 
