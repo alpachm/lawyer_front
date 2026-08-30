@@ -148,13 +148,59 @@
     "creditBrandVizo": "Vizo",
     "creditBrandStudio": "Studio"
   },
+  "TermsAndConditions": {
+    "subheading": "Aviso Legal",
+    "title": "Términos y Condiciones",
+    "subtitle": "Condiciones generales que regulan el acceso y uso de este sitio web, así como los servicios de información ofrecidos por el despacho.",
+    "lastUpdated": "Última actualización: 30 de agosto de 2026",
+    "sectionOneTitle": "1. Aceptación de los Términos",
+    "sectionOneBody": "Al acceder, navegar o utilizar este sitio web, usted manifiesta haber leído, comprendido y aceptado de manera plena e incondicional los presentes Términos y Condiciones. Si no está de acuerdo con cualquiera de las disposiciones aquí contenidas, le solicitamos abstenerse de utilizar el sitio y los servicios de información que en él se ofrecen. El acceso al sitio es gratuito y no requiere registro previo, sin perjuicio de las condiciones particulares que puedan aplicar a los servicios profesionales contratados de forma independiente.",
+    "sectionTwoTitle": "2. Servicios Profesionales y Ausencia de Relación Abogado-Cliente",
+    "sectionTwoBodyOne": "La información publicada en este sitio web tiene carácter meramente informativo y no constituye asesoría legal, opinión jurídica ni recomendación profesional alguna. El mero acceso al sitio, la lectura de su contenido o el envío de consultas a través de los formularios de contacto, correo electrónico u otros medios de comunicación disponibles no generan, por sí solos, una relación de abogado-cliente.",
+    "sectionTwoBodyTwo": "La relación profesional de abogado-cliente únicamente se entenderá formalizada cuando se suscriba de manera expresa un contrato u hoja de encargo de representación entre el despacho y el cliente, previa evaluación del caso y aceptación mutua de los términos de la contratación. En consecuencia, no debe compartir información confidencial o sensible a través de los medios de contacto del sitio web sin haber formalizado previamente dicha relación.",
+    "sectionThreeTitle": "3. Propiedad Intelectual",
+    "sectionThreeBody": "Todos los contenidos publicados en este sitio web, incluyendo, de manera enunciativa más no limitativa, textos, imágenes, logotipos, marcas, nombres comerciales, eslóganes, gráficos, elementos de diseño, estructura, bases de datos y demás materiales, se encuentran protegidos por las normas de propiedad intelectual e industrial vigentes y pertenecen al titular del sitio o a los terceros que hayan autorizado su uso. Queda expresamente prohibida la reproducción, distribución, transformación, comunicación pública o cualquier otro acto de explotación de dichos contenidos sin la autorización previa y por escrito del titular.",
+    "sectionFourTitle": "4. Uso Aceptable del Sitio Web",
+    "sectionFourBody": "El usuario se obliga a hacer un uso lícito, diligente y adecuado del sitio web y de sus contenidos, y se compromete a no incurrir en conductas que puedan dañar, inutilizar, sobrecargar o deteriorar el sitio, ni a realizar actos de extracción masiva de datos (scraping), inyección de código malicioso, suplantación de identidad o cualquier uso fraudulento de los medios de contacto del despacho. Asimismo, queda prohibido el uso del sitio para fines ilícitos, engañosos o contrarios al orden público y a las buenas costumbres.",
+    "sectionFiveTitle": "5. Limitación de Responsabilidad",
+    "sectionFiveBodyOne": "El contenido de este sitio web se ofrece con fines exclusivamente informativos y no garantiza la exactitud, actualidad, integridad o idoneidad de la información publicada para un caso concreto. El titular no será responsable de los daños y perjuicios que pudieran derivarse del uso de la información contenida en el sitio, ni de la interpretación que el usuario haga de la misma.",
+    "sectionFiveBodyTwo": "Este sitio puede contener enlaces a sitios web de terceros, los cuales se proporcionan únicamente como referencia. El titular no asume responsabilidad alguna por el contenido, las políticas o las prácticas de dichos sitios externos. Asimismo, no se garantiza la disponibilidad técnica, continuidad o ausencia de errores en el funcionamiento del sitio web, el cual podrá ser suspendido temporalmente por razones de mantenimiento o por causas ajenas a su voluntad.",
+    "sectionSixTitle": "6. Legislación Aplicable y Jurisdicción",
+    "sectionSixBody": "Los presentes Términos y Condiciones se rigen e interpretan de conformidad con las leyes vigentes de la República Bolivariana de Venezuela. Para la resolución de cualquier controversia que pudiera derivarse del acceso o uso de este sitio web, las partes se someten de manera expresa a la jurisdicción de los tribunales competentes de la República Bolivariana de Venezuela, con renuncia a cualquier otro fuero que pudiera corresponderles.",
+    "sectionSevenTitle": "7. Modificaciones a los Términos",
+    "sectionSevenBody": "El titular del sitio web se reserva el derecho de modificar, actualizar o suprimir, en cualquier momento y sin previo aviso, el contenido de los presentes Términos y Condiciones, así como cualquier otro aspecto del sitio, cuando así lo exijan cambios legales, operativos o de negocio. Las modificaciones entrarán en vigor desde el momento de su publicación en el sitio web, por lo que se recomienda al usuario revisar periódicamente esta página para mantenerse informado de las condiciones vigentes."
+  },
+  "PrivacyPolicy": {
+    "subheading": "Protección de Datos",
+    "title": "Política de Privacidad",
+    "subtitle": "Información sobre el tratamiento de los datos personales recabados a través de este sitio web, conforme a las normas vigentes en materia de protección de datos y privacidad en la República Bolivariana de Venezuela.",
+    "lastUpdated": "Última actualización: 30 de agosto de 2026",
+    "sectionOneTitle": "1. Información que Recopilamos",
+    "sectionOneBodyOne": "A través de los formularios de contacto, los enlaces de correo electrónico, el teléfono y demás medios de comunicación habilitados en este sitio web, podemos recopilar datos de carácter personal que usted nos facilite de manera voluntaria, tales como su nombre completo, número de teléfono, dirección de correo electrónico, nombre de la empresa u organización a la que representa y una descripción general del asunto o caso sobre el cual desea recibir asesoría. Estos datos son estrictamente los necesarios para atender su consulta y evaluar la viabilidad de una eventual relación profesional.",
+    "sectionOneBodyTwo": "Asimismo, y de forma automática, el sitio web puede recopilar determinada información de carácter técnico no identificable de manera directa, como la dirección de protocolo de Internet (IP), el tipo y versión del navegador, el sistema operativo, el dispositivo utilizado, las páginas visitadas, el tiempo de permanencia y la fuente de procedencia (página de referencia). Esta información se utiliza con fines exclusivamente estadísticos y de mejora del rendimiento y de la experiencia de navegación.",
+    "sectionTwoTitle": "2. Uso de la Información",
+    "sectionTwoBody": "Los datos personales e información que usted nos proporcione serán utilizados de manera exclusiva para responder a sus consultas jurídicas, programar y coordinar consultas o reuniones, evaluar la viabilidad y los antecedentes de su caso, gestionar las comunicaciones profesionales derivadas de una eventual contratación y, en general, para el cumplimiento de las obligaciones propias de la relación abogado-cliente cuando esta llegue a formalizarse. En ningún caso utilizaremos sus datos para fines distintos de los aquí descritos sin su consentimiento expreso.",
+    "sectionThreeTitle": "3. Confidencialidad y Protección de Datos",
+    "sectionThreeBody": "El despacho se compromete a tratar sus datos personales con estricta confidencialidad y a adoptar las medidas técnicas, organizativas y de seguridad razonablemente adecuadas para protegerlos contra el acceso no autorizado, la alteración, divulgación o destrucción indebida. En virtud del secreto profesional que rige el ejercicio de la abogacía, toda la información que usted comparta en el marco de una consulta o de una relación profesional será preservada bajo el más estricto deber de reserva, y no será divulgada salvo en los supuestos expresamente previstos en la presente política o cuando medie su consentimiento.",
+    "sectionFourTitle": "4. Transferencia y Divulgación a Terceros",
+    "sectionFourBodyOne": "Garantizamos que sus datos personales no serán vendidos, cedidos, arrendados, comercializados ni compartidos con terceros con fines de mercadeo o publicidad. Bajo ninguna circunstancia transferiremos su información a cambio de una contraprestación económica ni la pondremos a disposición de bases de datos comerciales.",
+    "sectionFourBodyTwo": "Excepcionalmente, sus datos podrán ser divulgados cuando ello sea estrictamente necesario para dar cumplimiento a una obligación legal, a una orden emanada de autoridad competente o a un mandato judicial, así como para proteger los derechos, la propiedad o la seguridad del despacho, de sus clientes o del público en general. En estos supuestos, la divulgación se limitará a la información mínima indispensable para atender el requerimiento correspondiente.",
+    "sectionFiveTitle": "5. Derechos del Usuario (ARCO)",
+    "sectionFiveBodyOne": "Usted tiene derecho a ejercer, en cualquier momento y de forma gratuita, los derechos de acceso, rectificación, cancelación y oposición (derechos ARCO) respecto de los datos personales que le conciernen y que se encuentren en nuestro poder. Ello incluye la posibilidad de solicitar información sobre el tratamiento de sus datos, corregir datos inexactos o incompletos, solicitar su supresión cuando ya no sean necesarios para las finalidades que motivaron su recolección, y oponerse a su tratamiento en los casos legalmente procedentes.",
+    "sectionFiveBodyTwo": "Para ejercer cualquiera de estos derechos, puede contactar directamente al despacho a través de los medios de contacto indicados en este sitio web (correo electrónico o teléfono), indicando de manera clara la solicitud correspondiente y acompañando, en su caso, los documentos que permitan acreditar su identidad. Atenderemos su solicitud en los plazos legalmente establecidos y le informaremos sobre el resultado de la misma.",
+    "sectionSixTitle": "6. Uso de Cookies y Tecnologías",
+    "sectionSixBody": "Este sitio web puede utilizar cookies y tecnologías similares con la finalidad de garantizar su correcto funcionamiento, recordar sus preferencias de navegación y, en su caso, generar métricas estadísticas anónimas que nos permitan mejorar el rendimiento y la experiencia del usuario. Estas cookies pueden ser esenciales o funcionales, y no se utilizan para recopilar información personal identificable sin su conocimiento. Usted puede configurar su navegador para rechazar o eliminar las cookies; sin embargo, ello podría afectar el funcionamiento de algunas funcionalidades del sitio.",
+    "sectionSevenTitle": "7. Cambios en la Política de Privacidad",
+    "sectionSevenBody": "El despacho se reserva el derecho de modificar, actualizar o complementar la presente Política de Privacidad en cualquier momento, con el objeto de adecuarla a los cambios legislativos, jurisprudenciales, tecnológicos u operativos que resulten pertinentes. Las modificaciones entrarán en vigor desde el momento de su publicación en este sitio web, por lo que le recomendamos revisar periódicamente esta página para mantenerse informado sobre el tratamiento de sus datos personales."
+  },
   "Actions": {
     "scheduleConsultation": "Agendar consulta",
     "learnMore": "Saber Más",
     "getStarted": "Comenzar",
     "contactUs": "Contáctanos",
     "contact": "Contacto",
-    "whatsappCta": "Escribir por WhatsApp"
+    "whatsappCta": "Escribir por WhatsApp",
+    "backHome": "Volver al Inicio"
   }
 }
 
