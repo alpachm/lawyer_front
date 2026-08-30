@@ -7,6 +7,12 @@ import { scrollToSection } from "../../utils/scrollNavigation";
 import heroImage from "../../assets/HomeScreen/hero.png";
 
 // ---------------------------------------------------------------------------
+// Constants
+// ---------------------------------------------------------------------------
+
+const WHATSAPP_URL = "https://wa.link/3ant7x";
+
+// ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 
@@ -53,8 +59,9 @@ export const Hero = () => {
                     {/* 4. Action Buttons */}
                     <div className="flex flex-wrap items-center gap-4">
                         <a
-                            href="#contact"
-                            onClick={(event) => handleNavClick(event, "#contact")}
+                            href={WHATSAPP_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center rounded-md bg-accent px-6 py-3 font-sans text-sm font-semibold text-white transition-opacity duration-200 hover:opacity-90 sm:text-base"
                         >
                             {t("Hero.consultationCta")}
