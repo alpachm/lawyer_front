@@ -215,9 +215,12 @@ export const Footer = () => {
                         <span className="text-slate-600" aria-hidden="true">
                             ·
                         </span>
-                        <a href="#" className="transition-colors duration-200 hover:text-secondary">
+                        <Link
+                            to="/politica-de-privacidad"
+                            className="transition-colors duration-200 hover:text-secondary"
+                        >
                             {t("Footer.privacy")}
-                        </a>
+                        </Link>
                     </div>
                 </div>
 
