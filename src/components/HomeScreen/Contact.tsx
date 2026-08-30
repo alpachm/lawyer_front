@@ -60,7 +60,7 @@ export const Contact = () => {
     const { t } = useTranslation();
 
     return (
-        <section id="contact" className="bg-primary py-16 lg:py-24">
+        <section id="contact" className="scroll-mt-20 bg-primary py-16 lg:py-24">
             <div className="mx-auto max-w-7xl px-4">
                 {/* ---- Header Section ---- */}
                 <div className="w-full flex flex-col items-center">

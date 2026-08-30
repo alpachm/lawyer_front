@@ -132,7 +132,7 @@ export const Testimonials = () => {
     const safeIndex = Math.min(Math.max(currentIndex, 0), maxStartIndex);
 
     return (
-        <section id="testimonials" className="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+        <section id="testimonials" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-16 lg:py-24">
             {/* ---- Header + Navigation ---- */}
             <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
                 <header className="flex max-w-2xl flex-col items-start text-left">

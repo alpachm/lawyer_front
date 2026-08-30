@@ -29,7 +29,7 @@ export const AboutUs = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="bg-primary py-16 lg:py-24">
+        <section id="about" className="scroll-mt-20 bg-primary py-16 lg:py-24">
             <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 lg:grid-cols-12">
                 {/* ---- Left Column: Image (Desktop 40%) ---- */}
                 <div className="lg:col-span-5">

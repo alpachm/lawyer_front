@@ -164,7 +164,7 @@ export const PracticeAreas = () => {
     const { t } = useTranslation();
 
     return (
-        <section className="mx-auto max-w-7xl px-4 py-16 lg:py-24">
+        <section id="services" className="mx-auto max-w-7xl scroll-mt-20 px-4 py-16 lg:py-24">
             {/* ---- Header Section ---- */}
             <div className="w-full flex flex-col items-center text-center">
                 <span className="font-sans text-xs font-bold uppercase tracking-widest text-accent">
