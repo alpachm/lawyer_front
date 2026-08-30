@@ -6,9 +6,101 @@
     "footerMadeWith": "Made with ❤️ for the future."
   },
   "Hero": {
-    "title": "Welcome to Our Platform",
-    "subtitle": "Smart solutions for your business"
+    "subheading": "CORPORATE & PERSONAL LEGAL ADVICE",
+    "title": "Strategic legal solutions for your business",
+    "description": "Trusted legal support for companies, entrepreneurs, and individuals. I protect your interests and ensure your project's growth with tailored solutions.",
+    "consultationCta": "Schedule Consultation",
+    "servicesCta": "View Services",
+    "badgeLicensed": "Licensed Attorney",
+    "badgeCases": "+200 cases handled",
+    "imageAlt": "Corporate attorney offering strategic legal counsel"
   },
+  "AboutUs": {
+    "subheading": "Attorney",
+    "title": "About Me",
+    "quote": "Representation and defense of commercial interests in judicial disputes and arbitrations with the highest technical rigor.",
+    "body": "With more than two decades of experience in the legal sector, I have specialized in designing complex strategies to protect the assets and reputation of national and international corporations. My approach combines academic sophistication with a pragmatic business vision, ensuring robust solutions both in commercial litigation and in highly complex arbitration tribunals.",
+    "credentialOne": "Active member of the Spanish Bar Association",
+    "credentialTwo": "Certified specialist in Commercial Law and Mergers",
+    "credentialThree": "Certified arbitrator by the Commercial Arbitration Center",
+    "imageAlt": "Attorney specialized in commercial law and arbitration"
+  },
+  "Figures": {
+    "casesWon": "Cases Won",
+    "yearsExperience": "Years of Experience",
+    "clientSatisfaction": "Client Satisfaction"
+  },
+  "PracticeAreas": {
+    "subheading": "Specialties",
+    "title": "Practice Areas",
+    "description": "Comprehensive legal solutions designed to protect your assets and accelerate your commercial projects.",
+    "corporateTitle": "Corporate Law",
+    "corporateText": "Company formation, corporate governance, and legal structuring of business projects.",
+    "civilTitle": "Civil Law",
+    "civilText": "Contracts of all kinds, asset claims, and defense of individual rights.",
+    "laborTitle": "Labor Law",
+    "laborText": "Hiring strategies, defense in labor litigation, and labor regulatory compliance.",
+    "commercialTitle": "Commercial Law",
+    "commercialText": "Mergers, acquisitions, commercial restructuring, and corporate transactions.",
+    "intellectualTitle": "Intellectual Property",
+    "intellectualText": "Trademark registration, patents, software protection, copyright, and trade secrets.",
+    "litigationTitle": "Commercial Litigation",
+    "litigationText": "Representation and defense of commercial interests in judicial disputes and arbitration."
+  },
+  "Methodology": {
+    "subheading": "Methodology",
+    "title": "A clear process from the start",
+    "stepOneTitle": "Case Evaluation",
+    "stepOneText": "We analyze in detail the legal situation and background of your inquiry.",
+    "stepTwoTitle": "Legal Strategy",
+    "stepTwoText": "We design a personalized and transparent strategic action plan.",
+    "stepThreeTitle": "Representation & Resolution",
+    "stepThreeText": "We execute the strategy with rigor, seeking the ideal resolution."
+  },
+
+  "Testimonials": {
+    "subheading": "Testimonials",
+    "title": "What my clients say",
+    "description": "My clients' peace of mind is the best guarantee of my daily work",
+    "prevAriaLabel": "Previous testimonial",
+    "nextAriaLabel": "Next testimonial"
+  },
+
+  "FAQ": {
+    "subheading": "Frequently Asked Questions",
+    "title": "I answer your questions before we get started",
+    "description": "Didn't find the answer you were looking for? Write to me for personalized advice.",
+    "questionOne": "How do I schedule a first consultation?",
+    "answerOne": "You can schedule your consultation directly through the 'Schedule Consultation' button on our website, selecting the date and time that best suits your availability, or by sending me a direct message via WhatsApp.",
+    "questionTwo": "Where are you located?",
+    "answerTwo": "Our main office is located in a central corporate area. We serve clients in person by appointment and also offer services at executive locations upon request.",
+    "questionThree": "What areas of law do you practice?",
+    "answerThree": "We specialize in Corporate, Commercial, Civil, Labor, Intellectual Property, and Commercial Litigation and Arbitration law.",
+    "questionFour": "Do you offer virtual consultations?",
+    "answerFour": "Yes, we offer 100% virtual consultation sessions via video call for national and international clients with the same effectiveness and technical rigor as an in-person consultation."
+  },
+
+  "Contact": {
+    "subheading": "Contact",
+    "title": "Let's talk about your case",
+    "description": "Start defending your rights today. Contact me to begin helping you.",
+    "whatsapp": "+58 412-0000000",
+    "phone": "+58 268-0000000",
+    "email": "contacto@abogado.com",
+    "address": "Santa Ana de Coro, Falcón, Venezuela",
+    "hours": "Monday to Friday: 8:00 AM - 5:00 PM",
+    "mapTitle": "Google Maps location"
+  },
+
+  "WhatsappCTA": {
+    "title": "Do you want an immediate response?",
+    "subtitle": "Write to me on WhatsApp and I'll assist you right away"
+  },
+
+  "FloatingButtons": {
+    "whatsappAriaLabel": "Contact via WhatsApp"
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",
@@ -25,11 +117,91 @@
     "mobileMenuAriaLabel": "Toggle navigation menu",
     "closeMenuAriaLabel": "Close navigation menu"
   },
+  "Footer": {
+    "brandName": "Jose A Rojas",
+    "description": "High-value strategic legal counsel for companies, entrepreneurs, and individuals seeking to protect their assets and grow their ventures.",
+    "availability": "Available for new consultations",
+    "navigationTitle": "Navigation",
+    "navHome": "Home",
+    "navAbout": "About Me",
+    "navServices": "Services",
+    "navTestimonials": "Testimonials",
+    "navContact": "Contact",
+    "areasTitle": "Areas",
+    "areaCorporate": "Corporate Law",
+    "areaCivil": "Civil Law",
+    "areaLabor": "Labor Law",
+    "areaCommercial": "Commercial Law",
+    "areaIntellectual": "Intellectual Property",
+    "areaLitigation": "Commercial Litigation",
+    "contactTitle": "Contact",
+    "addressLabel": "Location",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "address": "Santa Ana de Coro, Falcón, Venezuela",
+    "email": "contacto@abogado.com",
+    "phone": "+58 268-0000000",
+    "rights": "© {{year}} Jose A Rojas. All rights reserved.",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "creditPrefix": "Website created by",
+    "creditBrandVizo": "Vizo",
+    "creditBrandStudio": "Studio"
+  },
+  "TermsAndConditions": {
+    "subheading": "Legal Notice",
+    "title": "Terms and Conditions",
+    "subtitle": "General conditions governing access to and use of this website, as well as the informational services offered by the firm.",
+    "lastUpdated": "Last updated: August 30, 2026",
+    "sectionOneTitle": "1. Acceptance of Terms",
+    "sectionOneBody": "By accessing, browsing, or using this website, you represent that you have read, understood, and fully and unconditionally accepted these Terms and Conditions. If you do not agree with any of the provisions contained herein, we ask that you refrain from using the site and the informational services offered therein. Access to the site is free of charge and does not require prior registration, without prejudice to the specific conditions that may apply to the professional services contracted independently.",
+    "sectionTwoTitle": "2. Professional Services and Absence of Attorney-Client Relationship",
+    "sectionTwoBodyOne": "The information published on this website is for informational purposes only and does not constitute legal advice, legal opinion, or any professional recommendation. Merely accessing the site, reading its content, or sending inquiries through the contact forms, email, or other available means of communication does not, by itself, create an attorney-client relationship.",
+    "sectionTwoBodyTwo": "An attorney-client relationship shall only be deemed formalized when a representation agreement or engagement letter is expressly executed between the firm and the client, following a case evaluation and mutual acceptance of the terms of engagement. Accordingly, you should not share confidential or sensitive information through the site's contact channels without having first formalized such a relationship.",
+    "sectionThreeTitle": "3. Intellectual Property",
+    "sectionThreeBody": "All content published on this website, including, but not limited to, texts, images, logos, trademarks, trade names, slogans, graphics, design elements, structure, databases, and other materials, is protected by applicable intellectual and industrial property laws and belongs to the site owner or to third parties that have authorized its use. The reproduction, distribution, transformation, public communication, or any other act of exploitation of such content is expressly prohibited without the owner's prior written authorization.",
+    "sectionFourTitle": "4. Acceptable Use of the Website",
+    "sectionFourBody": "The user undertakes to make lawful, diligent, and appropriate use of the website and its content, and agrees not to engage in conduct that may damage, disable, overload, or impair the site, nor to perform acts of mass data extraction (scraping), injection of malicious code, identity theft, or any fraudulent use of the firm's contact channels. Likewise, the use of the site for unlawful, deceptive, or otherwise improper purposes contrary to public order and good customs is prohibited.",
+    "sectionFiveTitle": "5. Limitation of Liability",
+    "sectionFiveBodyOne": "The content of this website is provided for informational purposes only and does not guarantee the accuracy, timeliness, completeness, or suitability of the published information for any particular case. The owner shall not be liable for any damages that may arise from the use of the information contained on the site or from the user's interpretation thereof.",
+    "sectionFiveBodyTwo": "This site may contain links to third-party websites, which are provided solely for reference. The owner assumes no responsibility for the content, policies, or practices of such external sites. Likewise, no guarantee is made regarding the technical availability, continuity, or absence of errors in the operation of the website, which may be temporarily suspended for maintenance reasons or for causes beyond the owner's control.",
+    "sectionSixTitle": "6. Applicable Law and Jurisdiction",
+    "sectionSixBody": "These Terms and Conditions are governed by and construed in accordance with the laws in force in the Bolivarian Republic of Venezuela. For the resolution of any dispute that may arise from access to or use of this website, the parties expressly submit to the jurisdiction of the competent courts of the Bolivarian Republic of Venezuela, waiving any other jurisdiction to which they may be entitled.",
+    "sectionSevenTitle": "7. Modifications to the Terms",
+    "sectionSevenBody": "The owner of the website reserves the right to modify, update, or remove, at any time and without prior notice, the content of these Terms and Conditions, as well as any other aspect of the site, whenever required by legal, operational, or business changes. The modifications shall become effective upon their publication on the website; therefore, the user is encouraged to periodically review this page to stay informed of the current conditions."
+  },
+  "PrivacyPolicy": {
+    "subheading": "Data Protection",
+    "title": "Privacy Policy",
+    "subtitle": "Information on the processing of personal data collected through this website, in accordance with the applicable data protection and privacy regulations in the Bolivarian Republic of Venezuela.",
+    "lastUpdated": "Last updated: August 30, 2026",
+    "sectionOneTitle": "1. Information We Collect",
+    "sectionOneBodyOne": "Through the contact forms, email links, telephone, and other means of communication available on this website, we may collect personal data that you voluntarily provide to us, such as your full name, telephone number, email address, the name of the company or organization you represent, and a general description of the matter or case about which you wish to receive advice. These data are strictly those necessary to address your inquiry and assess the viability of a potential professional relationship.",
+    "sectionOneBodyTwo": "Likewise, and automatically, the website may collect certain technical information that is not directly identifiable, such as the Internet Protocol (IP) address, browser type and version, operating system, device used, pages visited, time spent on the site, and referral source. This information is used solely for statistical purposes and to improve the performance and browsing experience.",
+    "sectionTwoTitle": "2. Use of Information",
+    "sectionTwoBody": "The personal data and information you provide will be used exclusively to respond to your legal inquiries, schedule and coordinate consultations or meetings, evaluate the viability and background of your case, manage professional communications arising from a potential engagement, and, in general, fulfill the obligations inherent to the attorney-client relationship once it is formalized. Under no circumstances will we use your data for purposes other than those described herein without your express consent.",
+    "sectionThreeTitle": "3. Confidentiality and Data Protection",
+    "sectionThreeBody": "The firm is committed to treating your personal data with strict confidentiality and to adopting reasonably appropriate technical, organizational, and security measures to protect them against unauthorized access, alteration, disclosure, or improper destruction. By virtue of the professional privilege governing the practice of law, all information you share in the context of a consultation or professional relationship will be preserved under the strictest duty of confidentiality and will not be disclosed except in the cases expressly provided for in this policy or with your consent.",
+    "sectionFourTitle": "4. Transfer and Disclosure to Third Parties",
+    "sectionFourBodyOne": "We guarantee that your personal data will not be sold, transferred, leased, commercialized, or shared with third parties for marketing or advertising purposes. Under no circumstances will we transfer your information in exchange for financial consideration or make it available to commercial databases.",
+    "sectionFourBodyTwo": "Exceptionally, your data may be disclosed when strictly necessary to comply with a legal obligation, an order issued by a competent authority, or a judicial mandate, as well as to protect the rights, property, or safety of the firm, its clients, or the general public. In such cases, disclosure will be limited to the minimum information indispensable to address the corresponding request.",
+    "sectionFiveTitle": "5. User Rights (ARCO)",
+    "sectionFiveBodyOne": "You have the right to exercise, at any time and free of charge, the rights of access, rectification, cancellation, and objection (ARCO rights) regarding the personal data concerning you that are in our possession. This includes the ability to request information about the processing of your data, correct inaccurate or incomplete data, request its deletion when it is no longer necessary for the purposes that motivated its collection, and object to its processing in legally appropriate cases.",
+    "sectionFiveBodyTwo": "To exercise any of these rights, you may contact the firm directly through the contact channels indicated on this website (email or telephone), clearly stating the corresponding request and, where applicable, attaching the documents that allow us to verify your identity. We will respond to your request within the legally established timeframes and inform you of the outcome.",
+    "sectionSixTitle": "6. Use of Cookies and Technologies",
+    "sectionSixBody": "This website may use cookies and similar technologies in order to ensure its proper functioning, remember your browsing preferences, and, where applicable, generate anonymous statistical metrics that allow us to improve the performance and user experience. These cookies may be essential or functional, and are not used to collect identifiable personal information without your knowledge. You may configure your browser to reject or delete cookies; however, doing so may affect the operation of certain functionalities of the site.",
+    "sectionSevenTitle": "7. Changes to the Privacy Policy",
+    "sectionSevenBody": "The firm reserves the right to modify, update, or supplement this Privacy Policy at any time, in order to adapt it to any relevant legislative, jurisprudential, technological, or operational changes. The modifications shall become effective upon their publication on this website; therefore, we recommend that you periodically review this page to stay informed about the processing of your personal data."
+  },
   "Actions": {
+    "scheduleConsultation": "Schedule consultation",
     "learnMore": "Learn More",
     "getStarted": "Get Started",
     "contactUs": "Contact Us",
-    "contact": "Contact"
+    "contact": "Contact",
+    "whatsappCta": "Write on WhatsApp",
+    "backHome": "Back to Home"
   }
 }
+
 

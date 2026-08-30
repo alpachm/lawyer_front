@@ -1,6 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { FiMenu, FiX } from "react-icons/fi";
+
+import { scrollToSection } from "../../utils/scrollNavigation";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -24,12 +26,14 @@ type NavEntry = NavItem | CtaItem;
 // Constants
 // ---------------------------------------------------------------------------
 
+const WHATSAPP_URL = "https://wa.link/3ant7x";
+
 const NAV_ENTRIES: NavEntry[] = [
     { labelKey: "Header.navHome", href: "#home" },
     { labelKey: "Header.navAbout", href: "#about" },
     { labelKey: "Header.navServices", href: "#services" },
     { labelKey: "Header.navTestimonials", href: "#testimonials" },
-    { labelKey: "Actions.contact", href: "#contact", isCTA: true },
+    { labelKey: "Actions.contact", href: WHATSAPP_URL, isCTA: true },
 ];
 
 // ---------------------------------------------------------------------------
@@ -39,6 +43,7 @@ const NAV_ENTRIES: NavEntry[] = [
 export const Header = () => {
     const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
     // Lock body scroll when mobile menu is open
     useEffect(() => {
@@ -52,21 +57,69 @@ export const Header = () => {
         };
     }, [isMenuOpen]);
 
+    // Track vertical scroll to toggle the header elevation shadow
+    useEffect(() => {
+        const handleScroll = (): void => {
+            setIsScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     const toggleMenu = (): void => setIsMenuOpen((prev) => !prev);
     const closeMenu = (): void => setIsMenuOpen(false);
 
+    const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, href: string): void => {
+        // Keep native behaviour for new-tab / modified clicks.
+        if (
+            event.defaultPrevented ||
+            event.button !== 0 ||
+            event.metaKey ||
+            event.ctrlKey ||
+            event.shiftKey ||
+            event.altKey
+        ) {
+            return;
+        }
+
+        event.preventDefault();
+        closeMenu();
+
+        // Clear the mobile menu body scroll lock immediately so the smooth
+        // scroll is never blocked by the still-open drawer state.
+        document.body.style.overflow = "";
+
+        scrollToSection(href);
+    };
+
     return (
-        <header className="sticky top-0 z-50 bg-transparent backdrop-blur-sm">
+        <header
+            id="site-header"
+            className={`fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md transition-all duration-300 ease-in-out ${
+                isScrolled ? "shadow-md" : "shadow-none"
+            }`}
+        >
             <nav
-                className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16"
+                className={`mx-auto flex max-w-7xl items-center justify-between px-4 md:px-8 lg:px-16 transition-all duration-300 ease-in-out ${
+                    isScrolled ? "py-2.5" : "py-4"
+                }`}
                 role="navigation"
             >
                 {/* ---- Left: Brand ---- */}
-                <a href="#home" className="flex flex-col leading-tight">
-                    <span className="font-serif text-xl font-bold tracking-wide text-text md:text-2xl">
+                <a
+                    href="#home"
+                    className="flex flex-col leading-tight"
+                    onClick={(event) => handleNavClick(event, "#home")}
+                >
+                    <span className="font-serif text-xl font-black tracking-wide text-primary md:text-3xl">
                         {t("Header.brandName")}
                     </span>
-                    <span className="font-sans text-xs uppercase tracking-[0.1em] text-secondary-text md:text-sm">
+                    <span className="font-sans text-xs uppercase tracking-[1px] text-accent">
                         {t("Header.brandTitle")}
                     </span>
                 </a>
@@ -78,7 +131,9 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    className=" bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-md bg-accent px-5 py-2 text-xl font-light text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
                                 </a>
@@ -87,6 +142,7 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="text-xl font-light text-text transition-colors duration-200 hover:text-secondary"
                                 >
                                     {t(entry.labelKey)}
@@ -114,7 +170,7 @@ export const Header = () => {
 
             {/* ---- Mobile: Slide-in panel ---- */}
             <div
-                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-primary flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
+                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-white flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 aria-hidden={!isMenuOpen}
@@ -125,8 +181,9 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
-                                    className="block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
-                                    onClick={closeMenu}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="rounded-md block bg-accent px-6 py-3 text-center text-lg font-semibold text-white transition-opacity duration-200 hover:opacity-90"
                                 >
                                     {t(entry.labelKey)}
                                 </a>
@@ -135,8 +192,8 @@ export const Header = () => {
                             <li key={entry.labelKey}>
                                 <a
                                     href={entry.href}
+                                    onClick={(event) => handleNavClick(event, entry.href)}
                                     className="block py-3 text-3xl font-light text-text transition-colors duration-200 hover:text-secondary"
-                                    onClick={closeMenu}
                                 >
                                     {t(entry.labelKey)}
                                 </a>
