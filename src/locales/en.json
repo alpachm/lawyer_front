@@ -97,6 +97,10 @@
     "subtitle": "Write to me on WhatsApp and I'll assist you right away"
   },
 
+  "FloatingButtons": {
+    "whatsappAriaLabel": "Contact via WhatsApp"
+  },
+
   "Nav": {
     "home": "Home",
     "about": "About",

@@ -97,6 +97,10 @@
     "subtitle": "Escríbame por WhatsApp y le atenderé al instante"
   },
 
+  "FloatingButtons": {
+    "whatsappAriaLabel": "Contactar por WhatsApp"
+  },
+
   "Nav": {
     "home": "Inicio",
     "about": "Nosotros",
