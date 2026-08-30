@@ -39,6 +39,7 @@ const NAV_ENTRIES: NavEntry[] = [
 export const Header = () => {
     const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
     // Lock body scroll when mobile menu is open
     useEffect(() => {
@@ -52,13 +53,33 @@ export const Header = () => {
         };
     }, [isMenuOpen]);
 
+    // Track vertical scroll to toggle the header elevation shadow
+    useEffect(() => {
+        const handleScroll = (): void => {
+            setIsScrolled(window.scrollY > 20);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        handleScroll();
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     const toggleMenu = (): void => setIsMenuOpen((prev) => !prev);
     const closeMenu = (): void => setIsMenuOpen(false);
 
     return (
-        <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md">
+        <header
+            className={`fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md transition-all duration-300 ease-in-out ${
+                isScrolled ? "shadow-md" : "shadow-none"
+            }`}
+        >
             <nav
-                className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8 lg:px-16"
+                className={`mx-auto flex max-w-7xl items-center justify-between px-4 md:px-8 lg:px-16 transition-all duration-300 ease-in-out ${
+                    isScrolled ? "py-2.5" : "py-4"
+                }`}
                 role="navigation"
             >
                 {/* ---- Left: Brand ---- */}
