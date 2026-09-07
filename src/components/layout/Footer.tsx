@@ -1,10 +1,11 @@
 import type { MouseEvent } from "react";
 import type { IconType } from "react-icons";
 import { Link } from "@tanstack/react-router";
-import { FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FiMail, FiMapPin, FiPhone, FiInstagram } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
 import { scrollToSection } from "../../utils/scrollNavigation";
+import contactInfo from "../../utils/contactInfo";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -21,20 +22,14 @@ interface FooterNavLink {
 }
 
 interface FooterArea {
-    labelKey:
-        | "Footer.areaCorporate"
-        | "Footer.areaCivil"
-        | "Footer.areaLabor"
-        | "Footer.areaCommercial"
-        | "Footer.areaIntellectual"
-        | "Footer.areaLitigation";
+    labelKey: string;
     href: string;
 }
 
 interface FooterContactItem {
     icon: IconType;
-    labelKey: "Footer.addressLabel" | "Footer.emailLabel" | "Footer.phoneLabel";
-    valueKey: "Footer.address" | "Footer.email" | "Footer.phone";
+    labelKey: string;
+    valueKey: string;
     href?: string;
 }
 
@@ -51,31 +46,36 @@ const NAV_LINKS: FooterNavLink[] = [
 ];
 
 const AREAS: FooterArea[] = [
-    { labelKey: "Footer.areaCorporate", href: "#services" },
-    { labelKey: "Footer.areaCivil", href: "#services" },
-    { labelKey: "Footer.areaLabor", href: "#services" },
     { labelKey: "Footer.areaCommercial", href: "#services" },
     { labelKey: "Footer.areaIntellectual", href: "#services" },
     { labelKey: "Footer.areaLitigation", href: "#services" },
+    { labelKey: "Footer.areaCriminal", href: "#services" },
+    { labelKey: "Footer.areaCivil", href: "#services" },
 ];
 
 const CONTACT_ITEMS: FooterContactItem[] = [
     {
         icon: FiMapPin,
         labelKey: "Footer.addressLabel",
-        valueKey: "Footer.address",
+        valueKey: contactInfo.address,
     },
     {
         icon: FiMail,
         labelKey: "Footer.emailLabel",
-        valueKey: "Footer.email",
-        href: "mailto:contacto@abogado.com",
+        valueKey: contactInfo.email,
+        href: `mailto:${contactInfo.email}`,
     },
     {
         icon: FiPhone,
         labelKey: "Footer.phoneLabel",
-        valueKey: "Footer.phone",
-        href: "tel:+582680000000",
+        valueKey: contactInfo.phone_number,
+        href: contactInfo.phone_number_href,
+    },
+    {
+        icon: FiInstagram,
+        labelKey: "Footer.instagramLabel",
+        valueKey: contactInfo.instagram,
+        href: "https://www.instagram.com/joserojascam/?hl=es-la",
     },
 ];
 
