@@ -67,36 +67,6 @@ const PROFESSIONAL_PROFILE: ProfessionalProfileItem[] = [
     },
 ];
 
-const WORKFLOW_STEPS: WorkflowStep[] = [
-    { labelKey: "AboutUs.methodologyStepOne" },
-    { labelKey: "AboutUs.methodologyStepTwo" },
-    { labelKey: "AboutUs.methodologyStepThree" },
-    { labelKey: "AboutUs.methodologyStepFour" },
-];
-
-const PRACTICE_FOCUS: PracticeFocusItem[] = [
-    {
-        icon: FaUserShield,
-        titleKey: "AboutUs.practiceCriminalTitle",
-        textKey: "AboutUs.practiceCriminalText",
-    },
-    {
-        icon: FaHandshake,
-        titleKey: "AboutUs.practiceCommercialTitle",
-        textKey: "AboutUs.practiceCommercialText",
-    },
-    {
-        icon: FaUsers,
-        titleKey: "AboutUs.practiceCivilLaborTitle",
-        textKey: "AboutUs.practiceCivilLaborText",
-    },
-    {
-        icon: FaLandmark,
-        titleKey: "AboutUs.practiceLitigationTitle",
-        textKey: "AboutUs.practiceLitigationText",
-    },
-];
-
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
