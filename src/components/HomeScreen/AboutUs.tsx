@@ -1,13 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { IconType } from "react-icons";
-import {
-    FaBriefcase,
-    FaGraduationCap,
-    FaHandshake,
-    FaLandmark,
-    FaUserShield,
-    FaUsers,
-} from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 import { FiArrowRight, FiCheckCircle } from "react-icons/fi";
 
 import aboutUsImage from "../../assets/HomeScreen/about-us.png";
@@ -24,28 +17,6 @@ interface ProfessionalProfileItem {
     icon: IconType;
     labelKey: "AboutUs.educationLabel" | "AboutUs.experienceLabel";
     valueKey: "AboutUs.educationValue" | "AboutUs.experienceValue";
-}
-
-interface WorkflowStep {
-    labelKey:
-        | "AboutUs.methodologyStepOne"
-        | "AboutUs.methodologyStepTwo"
-        | "AboutUs.methodologyStepThree"
-        | "AboutUs.methodologyStepFour";
-}
-
-interface PracticeFocusItem {
-    icon: IconType;
-    titleKey:
-        | "AboutUs.practiceCriminalTitle"
-        | "AboutUs.practiceCommercialTitle"
-        | "AboutUs.practiceCivilLaborTitle"
-        | "AboutUs.practiceLitigationTitle";
-    textKey:
-        | "AboutUs.practiceCriminalText"
-        | "AboutUs.practiceCommercialText"
-        | "AboutUs.practiceCivilLaborText"
-        | "AboutUs.practiceLitigationText";
 }
 
 // ---------------------------------------------------------------------------
