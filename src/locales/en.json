@@ -123,6 +123,7 @@
   "Header": {
     "brandName": "Jose A Rojas",
     "brandTitle": "Attorney",
+    "logoAlt": "Jos A. Rojas Logo",
     "navHome": "Home",
     "navAbout": "About Me",
     "navServices": "Services",
@@ -132,6 +133,7 @@
   },
   "Footer": {
     "brandName": "Jose A Rojas",
+    "logoAlt": "Jos A. Rojas Logo",
     "description": "High-value strategic legal counsel for companies, entrepreneurs, and individuals seeking to protect their assets and grow their ventures.",
     "availability": "Available for new consultations",
     "navigationTitle": "Navigation",

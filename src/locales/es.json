@@ -123,6 +123,7 @@
   "Header": {
     "brandName": "Jose A Rojas",
     "brandTitle": "Abogado",
+    "logoAlt": "Logotipo de Jos A. Rojas",
     "navHome": "Inicio",
     "navAbout": "Sobre mi",
     "navServices": "Servicios",
@@ -132,6 +133,7 @@
   },
   "Footer": {
     "brandName": "Jose A Rojas",
+    "logoAlt": "Logotipo de Jos A. Rojas",
     "description": "Asesoría jurídica estratégica de alto valor para empresas, emprendedores y particulares que buscan proteger su patrimonio y hacer crecer sus proyectos.",
     "availability": "Disponible para nuevas consultas",
     "navigationTitle": "Navegación",

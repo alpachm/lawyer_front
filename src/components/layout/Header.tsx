@@ -4,6 +4,8 @@ import { FiMenu, FiX } from "react-icons/fi";
 
 import { scrollToSection } from "../../utils/scrollNavigation";
 
+import logo from "../../assets/logo.png";
+
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
@@ -113,14 +115,21 @@ export const Header = () => {
                 {/* ---- Left: Brand ---- */}
                 <a
                     href="#home"
-                    className="flex flex-col leading-tight"
+                    className="flex items-center gap-3"
                     onClick={(event) => handleNavClick(event, "#home")}
                 >
-                    <span className="font-serif text-xl font-black tracking-wide text-primary md:text-3xl">
-                        {t("Header.brandName")}
-                    </span>
-                    <span className="font-sans text-xs uppercase tracking-[1px] text-accent">
-                        {t("Header.brandTitle")}
+                    <img
+                        src={logo}
+                        alt={t("Header.logoAlt")}
+                        className="h-8 w-auto shrink-0 md:h-10"
+                    />
+                    <span className="flex flex-col leading-tight">
+                        <span className="font-serif text-xl font-black tracking-wide text-primary md:text-3xl">
+                            {t("Header.brandName")}
+                        </span>
+                        <span className="font-sans text-xs uppercase tracking-[1px] text-accent">
+                            {t("Header.brandTitle")}
+                        </span>
                     </span>
                 </a>
 
