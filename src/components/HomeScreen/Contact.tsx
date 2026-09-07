@@ -1,7 +1,8 @@
 import type { IconType } from "react-icons";
 import { FaWhatsapp } from "react-icons/fa";
-import { FiClock, FiMail, FiMapPin, FiPhone } from "react-icons/fi";
+import { FiClock, FiMail, FiMapPin, FiPhone, FiInstagram } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
+import contactInfo from "../../utils/contactInfo";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -9,12 +10,7 @@ import { useTranslation } from "react-i18next";
 
 interface ContactItem {
     icon: IconType;
-    labelKey:
-        | "Contact.whatsapp"
-        | "Contact.phone"
-        | "Contact.email"
-        | "Contact.address"
-        | "Contact.hours";
+    labelKey: string;
     href?: string;
     external?: boolean;
 }
@@ -26,32 +22,36 @@ interface ContactItem {
 const CONTACT_ITEMS: ContactItem[] = [
     {
         icon: FaWhatsapp,
-        labelKey: "Contact.whatsapp",
+        labelKey: contactInfo.whatsapp_number,
         href: "https://wa.link/3ant7x",
         external: true,
     },
     {
         icon: FiPhone,
-        labelKey: "Contact.phone",
-        href: "tel:+582680000000",
+        labelKey: contactInfo.phone_number,
+        href: "tel:+584125133482",
     },
     {
         icon: FiMail,
-        labelKey: "Contact.email",
-        href: "mailto:contacto@abogado.com",
+        labelKey: contactInfo.email,
+        href: "mailto:joseantoniorojascamacho@gmail.com",
+    },
+    {
+        icon: FiInstagram,
+        labelKey: contactInfo.instagram,
+        href: "https://www.instagram.com/joserojascam/?hl=es-la",
     },
     {
         icon: FiMapPin,
-        labelKey: "Contact.address",
+        labelKey: contactInfo.address,
     },
     {
         icon: FiClock,
-        labelKey: "Contact.hours",
+        labelKey: contactInfo.schedule,
     },
 ];
 
-const MAP_EMBED_URL =
-    "https://www.google.com/maps?q=Santa%20Ana%20de%20Coro%2C%20Falc%C3%B3n%2C%20Venezuela&output=embed";
+const MAP_EMBED_URL = "https://www.google.com/maps?q=11.4107528,-69.6696306&z=18&output=embed";
 
 // ---------------------------------------------------------------------------
 // Component

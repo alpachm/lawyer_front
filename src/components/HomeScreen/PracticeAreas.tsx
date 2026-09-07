@@ -4,7 +4,6 @@ import {
     FaArrowRight,
     FaBalanceScale,
     FaBriefcase,
-    FaBuilding,
     FaGavel,
     FaShieldAlt,
     FaUsers,
@@ -18,16 +17,14 @@ import { useTranslation } from "react-i18next";
 interface PracticeArea {
     icon: IconType;
     titleKey:
-        | "PracticeAreas.corporateTitle"
         | "PracticeAreas.civilTitle"
-        | "PracticeAreas.laborTitle"
+        | "PracticeAreas.criminalTitle"
         | "PracticeAreas.commercialTitle"
         | "PracticeAreas.intellectualTitle"
         | "PracticeAreas.litigationTitle";
     textKey:
-        | "PracticeAreas.corporateText"
         | "PracticeAreas.civilText"
-        | "PracticeAreas.laborText"
+        | "PracticeAreas.criminalText"
         | "PracticeAreas.commercialText"
         | "PracticeAreas.intellectualText"
         | "PracticeAreas.litigationText";
@@ -38,21 +35,6 @@ interface PracticeArea {
 // ---------------------------------------------------------------------------
 
 const PRACTICE_AREAS: PracticeArea[] = [
-    {
-        icon: FaBuilding,
-        titleKey: "PracticeAreas.corporateTitle",
-        textKey: "PracticeAreas.corporateText",
-    },
-    {
-        icon: FaBalanceScale,
-        titleKey: "PracticeAreas.civilTitle",
-        textKey: "PracticeAreas.civilText",
-    },
-    {
-        icon: FaUsers,
-        titleKey: "PracticeAreas.laborTitle",
-        textKey: "PracticeAreas.laborText",
-    },
     {
         icon: FaBriefcase,
         titleKey: "PracticeAreas.commercialTitle",
@@ -67,6 +49,16 @@ const PRACTICE_AREAS: PracticeArea[] = [
         icon: FaGavel,
         titleKey: "PracticeAreas.litigationTitle",
         textKey: "PracticeAreas.litigationText",
+    },
+    {
+        icon: FaBalanceScale,
+        titleKey: "PracticeAreas.criminalTitle",
+        textKey: "PracticeAreas.criminalText",
+    },
+    {
+        icon: FaUsers,
+        titleKey: "PracticeAreas.civilTitle",
+        textKey: "PracticeAreas.civilText",
     },
 ];
 

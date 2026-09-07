@@ -5,47 +5,66 @@ import { useTranslation } from "react-i18next";
 // Types
 // ---------------------------------------------------------------------------
 
-interface FigureMetric {
-    value: string;
-    symbol: string;
-    labelKey: "Figures.casesWon" | "Figures.yearsExperience" | "Figures.clientSatisfaction";
+type TitleKey =
+    | "Figures.item1.titlePrefix"
+    | "Figures.item1.titleHighlight"
+    | "Figures.item2.titleHighlight"
+    | "Figures.item3.titlePrefix"
+    | "Figures.item3.titleHighlight"
+    | "Figures.item3.titleSuffix";
+
+type SubtitleKey =
+    | "Figures.item1.subtitle"
+    | "Figures.item2.subtitle"
+    | "Figures.item3.subtitle";
+
+interface FigureItem {
+    id: "item1" | "item2" | "item3";
+    prefixKey: TitleKey | null;
+    highlightKey: TitleKey;
+    suffixKey: TitleKey | null;
+    subtitleKey: SubtitleKey;
 }
 
 // ---------------------------------------------------------------------------
 // Constants
 // ---------------------------------------------------------------------------
 
-const METRICS: FigureMetric[] = [
-    { value: "150", symbol: "+", labelKey: "Figures.casesWon" },
-    { value: "10", symbol: "+", labelKey: "Figures.yearsExperience" },
-    { value: "98", symbol: "%", labelKey: "Figures.clientSatisfaction" },
+const FIGURES: FigureItem[] = [
+    {
+        id: "item1",
+        prefixKey: "Figures.item1.titlePrefix",
+        highlightKey: "Figures.item1.titleHighlight",
+        suffixKey: null,
+        subtitleKey: "Figures.item1.subtitle",
+    },
+    {
+        id: "item2",
+        prefixKey: null,
+        highlightKey: "Figures.item2.titleHighlight",
+        suffixKey: null,
+        subtitleKey: "Figures.item2.subtitle",
+    },
+    {
+        id: "item3",
+        prefixKey: "Figures.item3.titlePrefix",
+        highlightKey: "Figures.item3.titleHighlight",
+        suffixKey: "Figures.item3.titleSuffix",
+        subtitleKey: "Figures.item3.subtitle",
+    },
 ];
 
-// Smooth count-up duration (milliseconds).
-const COUNT_UP_DURATION_MS = 1000;
-
-// Portion of the section that must be visible before the counter starts.
+// Portion of the section that must be visible before the reveal sequence starts.
 const OBSERVER_THRESHOLD = 0.2;
 
-// ---------------------------------------------------------------------------
-// Helpers
-// ---------------------------------------------------------------------------
-
-/**
- * Extracts the numeric target from a metric value string. Values are stored as
- * strings so they can later carry inline suffixes (e.g. "1.2k"); `parseFloat`
- * keeps only the leading numeric portion while the visual suffix is rendered
- * separately through `FigureMetric.symbol`.
- */
-function parseNumericTarget(value: string): number {
-    const parsed = Number.parseFloat(value);
-    return Number.isFinite(parsed) ? parsed : 0;
-}
-
-/** Eases the linear progress for a natural deceleration at the end of the count. */
-function easeOutCubic(progress: number): number {
-    return 1 - Math.pow(1 - progress, 3);
-}
+// Staggered transition delays for the reveal sequence. The literal values are
+// kept here so Tailwind can detect and generate them at build time.
+// Order: item1 -> item2 -> item3 (cascading bottom-to-top entry).
+const FIGURE_DELAY_CLASSES: readonly string[] = [
+    "delay-0",
+    "delay-150",
+    "delay-300",
+];
 
 // ---------------------------------------------------------------------------
 // Component
@@ -54,47 +73,29 @@ function easeOutCubic(progress: number): number {
 export const Figures = () => {
     const { t } = useTranslation();
     const sectionRef = useRef<HTMLElement | null>(null);
-    const animationFrameRef = useRef<number | null>(null);
-
-    // Start from the full static values so the numbers still render correctly
-    // if IntersectionObserver (or JavaScript) is unavailable.
-    const [values, setValues] = useState<number[]>(() =>
-        METRICS.map((metric) => parseNumericTarget(metric.value)),
-    );
+    const [isInView, setIsInView] = useState(false);
 
     useEffect(() => {
         const section = sectionRef.current;
 
-        // Keep the static fallback when IntersectionObserver is unsupported.
+        // Keep the figures visible when IntersectionObserver (or JS) is
+        // unavailable so the reveal animation never hides them permanently.
         if (!section || typeof IntersectionObserver === "undefined") {
+            setIsInView(true);
             return;
         }
 
-        const targets = METRICS.map((metric) => parseNumericTarget(metric.value));
-
+        // Reveal the figures once the section enters the viewport. The observer
+        // is unobserved immediately so the cards stay visible after scrolling
+        // past instead of resetting on every exit.
         const observer = new IntersectionObserver(
             (entries) => {
-                if (!entries.some((entry) => entry.isIntersecting)) {
-                    return;
-                }
-
-                // Animate only once, then stop observing.
-                observer.disconnect();
-
-                const startTime = performance.now();
-
-                const animate = (now: number) => {
-                    const linearProgress = Math.min((now - startTime) / COUNT_UP_DURATION_MS, 1);
-                    const progress = easeOutCubic(linearProgress);
-
-                    setValues(targets.map((target) => Math.round(target * progress)));
-
-                    if (linearProgress < 1) {
-                        animationFrameRef.current = requestAnimationFrame(animate);
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        setIsInView(true);
+                        observer.unobserve(entry.target);
                     }
-                };
-
-                animationFrameRef.current = requestAnimationFrame(animate);
+                }
             },
             { threshold: OBSERVER_THRESHOLD },
         );
@@ -103,10 +104,6 @@ export const Figures = () => {
 
         return () => {
             observer.disconnect();
-
-            if (animationFrameRef.current !== null) {
-                cancelAnimationFrame(animationFrameRef.current);
-            }
         };
     }, []);
 
@@ -114,17 +111,30 @@ export const Figures = () => {
         <section ref={sectionRef} className="bg-primary px-4 py-12">
             <div className="mx-auto max-w-7xl">
                 <div className="grid grid-cols-1 gap-8 text-center md:grid-cols-3">
-                    {METRICS.map((metric, index) => (
-                        <div key={metric.labelKey}>
-                            <div className="font-sans text-4xl font-bold lg:text-5xl">
-                                <span className="text-white">{values[index]}</span>
-                                <span className="text-accent">{metric.symbol}</span>
+                    {FIGURES.map((figure, index) => {
+                        // Cards slide up in sequence with a staggered delay that
+                        // cascades bottom-to-top. The delay is applied only once
+                        // the section is in view so the initial hidden state is
+                        // not unnecessarily deferred.
+                        const figureAnimationClasses = `transition-all duration-700 ease-out ${
+                            isInView
+                                ? `${FIGURE_DELAY_CLASSES[index]} translate-y-0 opacity-100`
+                                : "delay-0 translate-y-8 opacity-0"
+                        }`;
+
+                        return (
+                            <div key={figure.id} className={figureAnimationClasses}>
+                                <div className="font-sans text-3xl font-bold leading-tight tracking-tight text-white lg:text-4xl">
+                                    {figure.prefixKey && t(figure.prefixKey)}
+                                    <span className="text-accent">{t(figure.highlightKey)}</span>
+                                    {figure.suffixKey && t(figure.suffixKey)}
+                                </div>
+                                <p className="mt-2 font-sans text-sm text-white/90 lg:text-base">
+                                    {t(figure.subtitleKey)}
+                                </p>
                             </div>
-                            <p className="mt-2 font-sans text-sm text-white/90 lg:text-base">
-                                {t(metric.labelKey)}
-                            </p>
-                        </div>
-                    ))}
+                        );
+                    })}
                 </div>
             </div>
         </section>

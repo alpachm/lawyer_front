@@ -6,9 +6,9 @@
     "footerMadeWith": "Made with ❤️ for the future."
   },
   "Hero": {
-    "subheading": "CORPORATE & PERSONAL LEGAL ADVICE",
-    "title": "Strategic legal solutions for your business",
-    "description": "Trusted legal support for companies, entrepreneurs, and individuals. I protect your interests and ensure your project's growth with tailored solutions.",
+    "subheading": "LAW, STRATEGY & COMPREHENSIVE SUPPORT",
+    "title": "We support your decisions, protect your rights, and ensure your peace of mind",
+    "description": "We understand what’s at stake. Whether you’re looking to start a business, protect your assets, or resolve a personal or criminal dispute, we’re here to support you with personalized, transparent, and strategic guidance to provide the strong defense and legal peace of mind you need when it matters most.",
     "consultationCta": "Schedule Consultation",
     "servicesCta": "View Services",
     "badgeLicensed": "Licensed Attorney",
@@ -18,44 +18,74 @@
   "AboutUs": {
     "subheading": "Attorney",
     "title": "About Me",
-    "quote": "Representation and defense of commercial interests in judicial disputes and arbitrations with the highest technical rigor.",
-    "body": "With more than two decades of experience in the legal sector, I have specialized in designing complex strategies to protect the assets and reputation of national and international corporations. My approach combines academic sophistication with a pragmatic business vision, ensuring robust solutions both in commercial litigation and in highly complex arbitration tribunals.",
-    "credentialOne": "Active member of the Spanish Bar Association",
+    "quote": "A modern legal perspective, backed by expertise, strategy, and commitment.",
+    "bodyOne": "My name is José Antonio Rojas Camacho, and I graduated with a law degree from the University of Falcón in 2016. Since 2021, I have been practicing law with a modern, strategic, and people-centered approach.",
+    "bodyTwo": "I assist individuals and businesses through rigorous analysis, transparent communication, and diligent execution. As a member of the Falcón State Bar Association, I am committed to providing confidential and ethical service aimed at protecting your interests without making false promises.",
+    "workProfileLabel": "Work Profile",
+    "educationLabel": "Education",
+    "educationValue": "Universidad de Falcón (2016)",
+    "experienceLabel": "Professional Practice",
+    "experienceValue": "Since 2021",
+    "methodologyLabel": "Methodology",
+    "methodologyStepOne": "Diagnosis",
+    "methodologyStepTwo": "Strategy",
+    "methodologyStepThree": "Execution",
+    "methodologyStepFour": "Follow-up",
+    "practiceAreasLabel": "Practice Areas",
+    "practiceCriminalTitle": "Criminal Law",
+    "practiceCriminalText": "Defense, representation, and risk management.",
+    "practiceCommercialTitle": "Commercial & Corporate Law",
+    "practiceCommercialText": "Company formation, contracts, and intellectual property (trademarks and developments).",
+    "practiceCivilLaborTitle": "Civil & Labor Law",
+    "practiceCivilLaborText": "Asset management, labor relations, and agreements.",
+    "practiceLitigationTitle": "Litigation & Appeals",
+    "practiceLitigationText": "Constitutional amparo actions, appeals, and commercial arbitration.",
+    "credentialOne": "Active member of the Falcón State Bar Association, Venezuela",
     "credentialTwo": "Certified specialist in Commercial Law and Mergers",
     "credentialThree": "Certified arbitrator by the Commercial Arbitration Center",
     "imageAlt": "Attorney specialized in commercial law and arbitration"
   },
   "Figures": {
-    "casesWon": "Cases Won",
-    "yearsExperience": "Years of Experience",
-    "clientSatisfaction": "Client Satisfaction"
+    "item1": {
+      "titlePrefix": "Since ",
+      "titleHighlight": "2021",
+      "subtitle": "Professional practice"
+    },
+    "item2": {
+      "titleHighlight": "5",
+      "subtitle": "Areas of legal practice"
+    },
+    "item3": {
+      "titlePrefix": "",
+      "titleHighlight": "Direct",
+      "titleSuffix": " attention",
+      "subtitle": "Personalized follow-up"
+    }
   },
   "PracticeAreas": {
     "subheading": "Specialties",
     "title": "Practice Areas",
     "description": "Comprehensive legal solutions designed to protect your assets and accelerate your commercial projects.",
-    "corporateTitle": "Corporate Law",
-    "corporateText": "Company formation, corporate governance, and legal structuring of business projects.",
     "civilTitle": "Civil Law",
-    "civilText": "Contracts of all kinds, asset claims, and defense of individual rights.",
-    "laborTitle": "Labor Law",
-    "laborText": "Hiring strategies, defense in labor litigation, and labor regulatory compliance.",
+    "civilText": "Legal assistance with contracts, property-related disputes, and the protection of individuals' rights and interests.",
     "commercialTitle": "Commercial Law",
-    "commercialText": "Mergers, acquisitions, commercial restructuring, and corporate transactions.",
+    "commercialText": "Legal support for the formation, organization, and operation of companies, as well as for the planning and structuring of business projects. Legal advice on mergers, acquisitions, and sales of companies, business reorganizations, and commercial agreements.",
     "intellectualTitle": "Intellectual Property",
-    "intellectualText": "Trademark registration, patents, software protection, copyright, and trade secrets.",
+    "intellectualText": "Legal support to protect the identity, creations, and innovations of individuals and businesses, including trademarks, inventions, software, creative works, and trade secrets.",
     "litigationTitle": "Commercial Litigation",
-    "litigationText": "Representation and defense of commercial interests in judicial disputes and arbitration."
+    "litigationText": "Legal assistance in resolving conflicts between companies, claims arising from breach of agreements, and business-related disputes, through litigation or arbitration.",
+    "criminalTitle": "Criminal Law",
+    "criminalText": "Legal defense and representation in criminal investigations and proceedings, as well as support for victims and individuals involved in criminal matters."
   },
   "Methodology": {
     "subheading": "Methodology",
-    "title": "A clear process from the start",
+    "title": "A clear and personalized process from the very beginning",
     "stepOneTitle": "Case Evaluation",
-    "stepOneText": "We analyze in detail the legal situation and background of your inquiry.",
+    "stepOneText": "We listen to your situation, review the available information, and analyze the relevant legal aspects to identify the alternatives, possibilities, and risks of the case.",
     "stepTwoTitle": "Legal Strategy",
-    "stepTwoText": "We design a personalized and transparent strategic action plan.",
-    "stepThreeTitle": "Representation & Resolution",
-    "stepThreeText": "We execute the strategy with rigor, seeking the ideal resolution."
+    "stepTwoText": "We design a personalized, clear, and transparent action plan tailored to the client’s needs and the specific characteristics of their legal situation.",
+    "stepThreeTitle": "Representation and Enforcement",
+    "stepThreeText": "We implement the defined strategy, carrying out the necessary actions with thorough preparation, responsibility, and constant monitoring at every stage of the process."
   },
 
   "Testimonials": {
@@ -84,11 +114,6 @@
     "subheading": "Contact",
     "title": "Let's talk about your case",
     "description": "Start defending your rights today. Contact me to begin helping you.",
-    "whatsapp": "+58 412-0000000",
-    "phone": "+58 268-0000000",
-    "email": "contacto@abogado.com",
-    "address": "Santa Ana de Coro, Falcón, Venezuela",
-    "hours": "Monday to Friday: 8:00 AM - 5:00 PM",
     "mapTitle": "Google Maps location"
   },
 
@@ -110,6 +135,7 @@
   "Header": {
     "brandName": "Jose A Rojas",
     "brandTitle": "Attorney",
+    "logoAlt": "Jos A. Rojas Logo",
     "navHome": "Home",
     "navAbout": "About Me",
     "navServices": "Services",
@@ -119,6 +145,7 @@
   },
   "Footer": {
     "brandName": "Jose A Rojas",
+    "logoAlt": "Jos A. Rojas Logo",
     "description": "High-value strategic legal counsel for companies, entrepreneurs, and individuals seeking to protect their assets and grow their ventures.",
     "availability": "Available for new consultations",
     "navigationTitle": "Navigation",
@@ -128,16 +155,16 @@
     "navTestimonials": "Testimonials",
     "navContact": "Contact",
     "areasTitle": "Areas",
-    "areaCorporate": "Corporate Law",
     "areaCivil": "Civil Law",
-    "areaLabor": "Labor Law",
     "areaCommercial": "Commercial Law",
     "areaIntellectual": "Intellectual Property",
+    "areaCriminal": "Criminal Law",
     "areaLitigation": "Commercial Litigation",
     "contactTitle": "Contact",
     "addressLabel": "Location",
     "emailLabel": "Email",
     "phoneLabel": "Phone",
+    "instagramLabel": "Instagram",
     "address": "Santa Ana de Coro, Falcón, Venezuela",
     "email": "contacto@abogado.com",
     "phone": "+58 268-0000000",
