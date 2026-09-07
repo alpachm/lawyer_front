@@ -46,9 +46,21 @@
     "imageAlt": "Abogado especializado en derecho comercial y arbitraje"
   },
   "Figures": {
-    "casesWon": "Casos ganados",
-    "yearsExperience": "Años de experiencia",
-    "clientSatisfaction": "Satisfacción del cliente"
+    "item1": {
+      "titlePrefix": "Desde ",
+      "titleHighlight": "2021",
+      "subtitle": "Ejercicio profesional"
+    },
+    "item2": {
+      "titleHighlight": "5",
+      "subtitle": "Áreas de práctica jurídica"
+    },
+    "item3": {
+      "titlePrefix": "Atención ",
+      "titleHighlight": "directa",
+      "titleSuffix": "",
+      "subtitle": "Seguimiento personalizado"
+    }
   },
   "PracticeAreas": {
     "subheading": "Especialidades",

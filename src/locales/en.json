@@ -46,9 +46,21 @@
     "imageAlt": "Attorney specialized in commercial law and arbitration"
   },
   "Figures": {
-    "casesWon": "Cases Won",
-    "yearsExperience": "Years of Experience",
-    "clientSatisfaction": "Client Satisfaction"
+    "item1": {
+      "titlePrefix": "Since ",
+      "titleHighlight": "2021",
+      "subtitle": "Professional practice"
+    },
+    "item2": {
+      "titleHighlight": "5",
+      "subtitle": "Areas of legal practice"
+    },
+    "item3": {
+      "titlePrefix": "",
+      "titleHighlight": "Direct",
+      "titleSuffix": " attention",
+      "subtitle": "Personalized follow-up"
+    }
   },
   "PracticeAreas": {
     "subheading": "Specialties",
