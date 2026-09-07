@@ -1,8 +1,6 @@
 import { useTranslation } from "react-i18next";
 import type { IconType } from "react-icons";
 import {
-    FaArrowDown,
-    FaArrowRight,
     FaBriefcase,
     FaGraduationCap,
     FaHandshake,
