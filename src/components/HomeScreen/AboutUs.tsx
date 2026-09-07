@@ -60,7 +60,11 @@ export const AboutUs = () => {
 
                     {/* 4. Body Text */}
                     <p className="max-w-prose font-sans text-base font-light leading-relaxed text-slate-400 sm:text-lg">
-                        {t("AboutUs.body")}
+                        {t("AboutUs.bodyOne")}
+                    </p>
+
+                    <p className="max-w-prose font-sans text-base font-light leading-relaxed text-slate-400 sm:text-lg">
+                        {t("AboutUs.bodyTwo")}
                     </p>
 
                     {/* 5. Credentials Bullet List */}
