@@ -7,6 +7,8 @@ import { useTranslation } from "react-i18next";
 import { scrollToSection } from "../../utils/scrollNavigation";
 import contactInfo from "../../utils/contactInfo";
 
+import logo from "../../assets/logo.png";
+
 // ---------------------------------------------------------------------------
 // Types
 // ---------------------------------------------------------------------------
@@ -113,9 +115,14 @@ export const Footer = () => {
                     <div className="lg:col-span-4">
                         <a
                             href="#home"
-                            className="inline-flex items-center gap-3"
+                            className="inline-flex items-center gap-2"
                             onClick={(event) => handleNavClick(event, "#home")}
                         >
+                            <img
+                                src={logo}
+                                alt={t("Footer.logoAlt")}
+                                className="h-10 w-auto shrink-0 brightness-0 invert"
+                            />
                             <span className="font-serif text-2xl font-bold tracking-tight text-white">
                                 {t("Footer.brandName")}
                             </span>
