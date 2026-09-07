@@ -24,34 +24,34 @@ interface Testimonial {
 const TESTIMONIALS: Testimonial[] = [
     {
         id: 1,
-        name: "María Fernández",
-        role: "Directora de Operaciones",
-        company: "Grupo Nexus",
-        quote: "Su asesoría fue clave para resolver un litigio comercial que parecía imposible. Siempre con una claridad y un compromiso excepcionales.",
+        name: "Gerardo Granadillo",
+        role: "Médico",
+        company: "",
+        quote: "Gracias José. Tienes muy buenos principios y valores que vienen desde la familia. Sigue así, te auguro éxitos, tienes un futuro profesional brillante.",
         stars: 5,
     },
     {
         id: 2,
-        name: "Carlos Mendoza",
+        name: "Sergio Medina",
         role: "CEO",
-        company: "Innovatech Solutions",
-        quote: "Gracias a su estrategia jurídica logramos cerrar una adquisición compleja sin contratiempos. Un profesional de primer nivel.",
+        company: "SM importaciones C.A",
+        quote: "Gracias José, un excelente profesional, paciente y atento con todas mis inquietudes, comunica de forma clara y precisa, muy eficiente y satisfecho por tu servicio.",
         stars: 5,
     },
     {
         id: 3,
-        name: "Lucía Ramírez",
-        role: "Gerente Legal",
-        company: "Constructora Andina",
-        quote: "Nos acompañó en la reestructuración de la empresa con rigor y empatía. Recomiendo su trabajo sin reservas.",
+        name: "Daniel Larez",
+        role: "Ingeniero Ambiental",
+        company: "",
+        quote: "Quedamos muy agradecidos por su asesoría, aclaro todas las dudas en todos los pasos del proceso. Encontró fallos importantes en el proceso y nos aporto toda la orientación profesional para resolverlo. Quedamos muy agradecidos con el servicio legal recibido.",
         stars: 4,
     },
     {
         id: 4,
-        name: "Andrés Herrera",
-        role: "Fundador",
-        company: "FinPay",
-        quote: "Protegió la propiedad intelectual de nuestra startup y nos dio la tranquilidad necesaria para crecer con seguridad.",
+        name: "Jonathan González",
+        role: "Cliente",
+        company: "",
+        quote: "Muchas gracias por ayudarme a resolver mi caso, un trabajo extraordinario, con ética y profesionalismo, gracias por el apoyo siempre a nivel jurídico.",
         stars: 5,
     },
     {
@@ -214,7 +214,8 @@ export const Testimonials = () => {
                                     {testimonial.name}
                                 </h3>
                                 <p className="text-xs text-secondary-text">
-                                    {testimonial.role} · {testimonial.company}
+                                    {testimonial.role} {testimonial.company.length > 0 ? "·" : ""}{" "}
+                                    {testimonial.company}
                                 </p>
                             </article>
                         </div>
