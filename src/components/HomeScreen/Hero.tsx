@@ -10,7 +10,7 @@ import bgHeroImage from "../../assets/HomeScreen/bg-hero.png";
 // Constants
 // ---------------------------------------------------------------------------
 
-const WHATSAPP_URL = "https://wa.link/3ant7x";
+const WHATSAPP_URL = import.meta.env.VITE_WHATSAPP_LINK;
 
 // ---------------------------------------------------------------------------
 // Component
