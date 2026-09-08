@@ -179,12 +179,12 @@ export const Header = () => {
 
             {/* ---- Mobile: Slide-in panel ---- */}
             <div
-                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-white flex flex-col p-6 gap-6 md:hidden transition-transform duration-300 ease-in-out ${
+                className={`fixed left-0 right-0 top-16 z-40 h-[calc(100vh-64px)] w-full bg-white flex flex-col justify-center p-4 md:hidden transition-transform duration-300 ease-in-out ${
                     isMenuOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 aria-hidden={!isMenuOpen}
             >
-                <ul className="flex flex-col justify-between text-center h-full gap-6">
+                <ul className="flex flex-col text-center gap-4">
                     {NAV_ENTRIES.map((entry) =>
                         "isCTA" in entry ? (
                             <li key={entry.labelKey}>
@@ -202,7 +202,7 @@ export const Header = () => {
                                 <a
                                     href={entry.href}
                                     onClick={(event) => handleNavClick(event, entry.href)}
-                                    className="block py-3 text-3xl font-light text-text transition-colors duration-200 hover:text-secondary"
+                                    className="block py-3 text-lg font-light text-text transition-colors duration-200 hover:text-secondary"
                                 >
                                     {t(entry.labelKey)}
                                 </a>
