@@ -1,6 +1,7 @@
 import type { MouseEvent } from "react";
 import type { IconType } from "react-icons";
 import { Link } from "@tanstack/react-router";
+import { FaWhatsapp } from "react-icons/fa";
 import { FiMail, FiMapPin, FiPhone, FiInstagram } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
 
@@ -66,6 +67,12 @@ const CONTACT_ITEMS: FooterContactItem[] = [
         labelKey: "Footer.emailLabel",
         valueKey: contactInfo.email,
         href: `mailto:${contactInfo.email}`,
+    },
+    {
+        icon: FaWhatsapp,
+        labelKey: "Footer.whatsappLabel",
+        valueKey: contactInfo.phone_number,
+        href: import.meta.env.VITE_WHATSAPP_LINK,
     },
     {
         icon: FiPhone,
@@ -194,6 +201,7 @@ export const Footer = () => {
                                             {item.href ? (
                                                 <a
                                                     href={item.href}
+                                                    target="_blank"
                                                     className="transition-all duration-200 ease-in-out hover:translate-x-1"
                                                 >
                                                     {t(item.valueKey)}
