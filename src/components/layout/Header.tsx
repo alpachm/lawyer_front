@@ -28,7 +28,9 @@ type NavEntry = NavItem | CtaItem;
 // Constants
 // ---------------------------------------------------------------------------
 
-const WHATSAPP_URL = "https://wa.link/3ant7x";
+const WHATSAPP_URL = import.meta.env.VITE_WHATSAPP_LINK;
+
+console.log({ WHATSAPP_URL: WHATSAPP_URL });
 
 const NAV_ENTRIES: NavEntry[] = [
     { labelKey: "Header.navHome", href: "#home" },

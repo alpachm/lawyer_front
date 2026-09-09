@@ -10,7 +10,7 @@ import bgHeroImage from "../../assets/HomeScreen/bg-hero.png";
 // Constants
 // ---------------------------------------------------------------------------
 
-const WHATSAPP_URL = "https://wa.link/3ant7x";
+const WHATSAPP_URL = import.meta.env.VITE_WHATSAPP_LINK;
 
 // ---------------------------------------------------------------------------
 // Component
@@ -46,7 +46,7 @@ export const Hero = () => {
                 <img
                     src={bgHeroImage}
                     alt=""
-                    className="h-full w-full scale-x-[-1] object-cover object-[center_0%]"
+                    className="h-full w-full scale-x-[-1] object-cover object-[28%_0%] md:object-[center_0%]"
                     loading="eager"
                 />
                 <div className="absolute inset-0 bg-primary/75" />

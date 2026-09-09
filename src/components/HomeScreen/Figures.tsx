@@ -85,16 +85,13 @@ export const Figures = () => {
             return;
         }
 
-        // Reveal the figures once the section enters the viewport. The observer
-        // is unobserved immediately so the cards stay visible after scrolling
-        // past instead of resetting on every exit.
+        // Toggle the reveal state on every pass so the figures animate in when
+        // the section enters the viewport and back out when it leaves. Keeping
+        // the observer active allows the animation to re-trigger on each scroll.
         const observer = new IntersectionObserver(
             (entries) => {
                 for (const entry of entries) {
-                    if (entry.isIntersecting) {
-                        setIsInView(true);
-                        observer.unobserve(entry.target);
-                    }
+                    setIsInView(entry.isIntersecting);
                 }
             },
             { threshold: OBSERVER_THRESHOLD },
