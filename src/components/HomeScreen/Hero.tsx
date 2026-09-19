@@ -97,12 +97,6 @@ export const Hero = () => {
                                 {t("Hero.badgeLicensed")}
                             </span>
                         </div>
-                        <div className="flex items-center gap-2">
-                            <FiBriefcase className="h-5 w-5 shrink-0 text-gold" />
-                            <span className="font-sans text-sm text-white sm:text-base">
-                                {t("Hero.badgeCases")}
-                            </span>
-                        </div>
                     </div>
                 </div>
             </div>
