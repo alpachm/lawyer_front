@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
-import { FiBriefcase, FiShield } from "react-icons/fi";
+import { FiShield } from "react-icons/fi";
 
 import { scrollToSection } from "../../utils/scrollNavigation";
 
@@ -95,12 +95,6 @@ export const Hero = () => {
                             <FiShield className="h-5 w-5 shrink-0 text-gold" />
                             <span className="font-sans text-sm text-white sm:text-base">
                                 {t("Hero.badgeLicensed")}
-                            </span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                            <FiBriefcase className="h-5 w-5 shrink-0 text-gold" />
-                            <span className="font-sans text-sm text-white sm:text-base">
-                                {t("Hero.badgeCases")}
                             </span>
                         </div>
                     </div>
