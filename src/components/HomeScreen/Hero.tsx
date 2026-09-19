@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { useTranslation } from "react-i18next";
-import { FiBriefcase, FiShield } from "react-icons/fi";
+import { FiShield } from "react-icons/fi";
 
 import { scrollToSection } from "../../utils/scrollNavigation";
 
